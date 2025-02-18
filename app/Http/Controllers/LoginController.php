@@ -42,7 +42,7 @@ class LoginController extends Controller
 
            flashMessage('success', 'Login Successfully Done!!');
 
-            return response()->json(['status' => true]);
+            return response()->json(['status' => true,'redirect_url' => route('index')]);
         } else {
 
             flashMessage('error', 'Please Enter Valid Email and Password');

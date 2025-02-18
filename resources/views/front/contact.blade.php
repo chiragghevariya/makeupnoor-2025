@@ -49,16 +49,22 @@
                 </div>
                 <div class="col-md-6">
                     <h6>GET IN TOUCH</h6>
-                        <form id="contact" class="row FromSubmit" action="{{ route('admin.login-post') }}" method="POST" >
+                        <form id="contact" class="row FromSubmit" action="{{ route('contact-post') }}" method="POST" >
                             @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Name *" required>
+                                <input type="text" name="name" class="form-control" placeholder="Name *">
+                            </div>
+                            <div  class="mb-5" >
+                                <span class="text-danger" id="name_error"></span>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <input type="text" name="email" class="form-control" placeholder="Email / Phone">
+                            </div>
+                            <div  class="mb-5" >
+                                <span class="text-danger" id="email_error"></span>
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -75,7 +81,7 @@
 
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <button class="btn fl-btn" type="submit">Hello!</button>
+                                <button class="btn fl-btn" type="submit">Send</button>
                             </div>
                         </div>
                     </form>

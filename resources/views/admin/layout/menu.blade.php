@@ -63,7 +63,7 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="tables-basic.html" class="menu-link">
+            <a href="{{ route('gallery.index') }}" class="menu-link">
               <i class="menu-icon tf-icons ri-table-alt-line"></i>
               <div data-i18n="Gallery">Gallery</div>
             </a>

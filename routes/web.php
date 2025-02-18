@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/about',[HomeController::class, 'about'])->name('about');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
-Route::get('/contact-post',[HomeController::class, 'contactPost'])->name('contact-post');
+Route::post('/contact-post',[HomeController::class, 'contactPost'])->name('contact-post');
 Route::get('/gallery',[HomeController::class, 'gallery'])->name('gallery');
 
 
@@ -30,6 +31,18 @@ Route::post('login-post',[LoginController::class, 'loginPost'])->name('admin.log
 Route::middleware(['auth'])->group(function () {
 
     Route::get('dashboard',[AdminController::class, 'index'])->name('index');
+
+    //gallery
+    Route::group(['prefix' => 'gallery', 'as' => 'gallery.'], function()
+    {
+        Route::get('list', [GalleryController::class, 'index'])->name('index');
+        Route::get('listing', [GalleryController::class, 'listing'])->name('listing');
+        Route::get('create', [GalleryController::class, 'create'])->name('create');
+        Route::post('store', [GalleryController::class, 'store'])->name('store');
+        Route::get('edit/{id}', [GalleryController::class, 'edit'])->name('edit');
+        Route::post('update/{id}', [GalleryController::class, 'update'])->name('update');
+        Route::post('delete', [GalleryController::class, 'delete'])->name('delete');
+    });
 
 });
 

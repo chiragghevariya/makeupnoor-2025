@@ -103,7 +103,7 @@
 
               var formAction = $(this).attr('action');
               var $btn = $('#' + formId + ' button[type="submit"]').html('loading');
-              var redirectURL = "{{ route('index') }}";
+            //   var redirectURL = "$(this).data("redirect_url");
               $.ajax({
                   type: "POST",
                   url: formAction,
@@ -115,7 +115,7 @@
                       // return false;
                       // console.log(response);
                       if (response.status == true) {
-                          window.location = redirectURL;
+                          window.location = response.redirect_url;
                       } else {
 
                           location.reload();
@@ -147,5 +147,6 @@
               });
           }
       </script>
+@yield('script')
 </body>
 </html>

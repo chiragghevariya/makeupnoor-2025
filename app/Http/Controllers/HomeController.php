@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
+
 
 class HomeController extends Controller
 {
@@ -39,19 +41,17 @@ class HomeController extends Controller
 			$messages['recaptcha_response.verify_recaptcha'] = 'ReCAPTCHA verification failed.';
 		}
 
-        $request->validate($rules, $messages);
+        $obj = new Contact;
+        $obj->name = $request->name;
+        $obj->email = $request->email;
+        $obj->message = $request->message;
 
-        if (\Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        $obj->save();
 
-           flashMessage('success', 'Login Successfully Done!!');
+        flashMessage('success', 'email sent Successfully !!');
 
-            return response()->json(['status' => true]);
-        } else {
+        return response()->json(['status' => true,'redirect_url' => route('contact')]);
 
-            flashMessage('error', 'Please Enter Valid Email and Password');
-
-            return response()->json(['status' => false]);
-        }
     }
 
     public function gallery()

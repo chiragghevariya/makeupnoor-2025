@@ -50,6 +50,18 @@
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/pages/cards-statistics.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/pages/cards-analytics.css" />
 
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/flatpickr/flatpickr.css" />
+
+    <!-- Row Group CSS -->
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
+    <!-- Form Validation -->
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/@form-validation/form-validation.css" />
     <!-- Helpers -->
     <script src="{{ asset('') }}assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -57,6 +69,7 @@
     <script src="{{ asset('') }}assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('') }}assets/js/config.js"></script>
+
   </head>
 
   <body>
@@ -113,6 +126,8 @@
     <script src="{{ asset('') }}assets/vendor/libs/i18n/i18n.js"></script>
     <script src="{{ asset('') }}assets/vendor/libs/typeahead-js/typeahead.js"></script>
     <script src="{{ asset('') }}assets/vendor/js/menu.js"></script>
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"> --}}
+    {{-- <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script> --}}
 
     <!-- endbuild -->
 
@@ -130,6 +145,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <script src="https://www.google.com/recaptcha/api.js?render={{ env('YOUR_SITE_KEY') }}"></script>
+
+    <script src="{{ asset('') }}assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <!-- Flat Picker -->
+    <script src="{{ asset('') }}assets/vendor/libs/moment/moment.js"></script>
+    <script src="{{ asset('') }}assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <!-- Form Validation -->
+    <script src="{{ asset('') }}assets/vendor/libs/@form-validation/popular.js"></script>
+    <script src="{{ asset('') }}assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+    <script src="{{ asset('') }}assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+    <!-- Page JS -->
+    <script src="{{ asset('') }}assets/js/tables-datatables-basic.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
