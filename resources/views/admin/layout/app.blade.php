@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - Analytics | Materialize - Material Design HTML Admin Template</title>
+    <title>@yield('title') | {{ config("app.name") }}</title>
 
     <meta name="description" content="" />
 
@@ -57,6 +57,11 @@
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/flatpickr/flatpickr.css" />
+
+      <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.css" />
 
     <!-- Row Group CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
@@ -155,6 +160,9 @@
     <script src="{{ asset('') }}assets/vendor/libs/@form-validation/bootstrap5.js"></script>
     <script src="{{ asset('') }}assets/vendor/libs/@form-validation/auto-focus.js"></script>
 
+    <script src="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.js"></script>
+    <script src="{{ asset('') }}assets/js/forms-file-upload.js"></script>
+
     <!-- Page JS -->
     <script src="{{ asset('') }}assets/js/tables-datatables-basic.js"></script>
 
@@ -174,6 +182,95 @@
               });
           });
       });
+    </script>
+    <script>
+        $(document).on("click", ".delete", function() {
+
+            var myUrl = $(this).attr('data-link');
+
+            $.ajax({
+                type: 'get',
+                url: myUrl,
+                data: {
+                    "_token": "{{ csrf_token() }}"
+                },
+                success: function(response) {
+                    if (response.status == 1 && response.msg != "") {
+
+                        location.reload();
+
+                    }
+                }
+            });
+        });
+
+    </script>
+   <script src="https://cdn.tiny.cloud/1/{{ env('TINYMCE_API_KEY') }}/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <style>
+        .tox-notifications-container {
+            display: none !important;
+        }
+    </style>
+    <script>
+        tinymce.init({
+          selector: '#editor', // Target your textarea ID
+          plugins: 'advlist autolink lists link image charmap print preview anchor',
+          toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat',
+          height: 300,
+        });
+      </script>
+       <script>
+        $('form.FromSubmit').submit(function(event) {
+
+            //alert("in");
+            // return false;
+            tinyMCE.triggerSave();
+            event.preventDefault();
+            var formId = $(this).attr('id');
+            // if ($(this).valid()) {
+
+            var formAction = $(this).attr('action');
+            var $btn = $('#' + formId + ' button[type="submit"]').html('loading');
+            var redirectURL = $(this).data("redirect_url");
+            $.ajax({
+                type: "POST",
+                url: formAction,
+                data: new FormData(this),
+                contentType: false,
+                processData: false,
+                enctype: 'multipart/form-data',
+                success: function(response) {
+                    // return false;
+                    if (response.status == 1 && response.msg != "") {
+                        window.location = redirectURL;
+                    }
+                },
+                error: function(jqXhr) {
+
+                    console.log(jqXhr);
+
+                    var errors = $.parseJSON(jqXhr.responseText);
+                    showErrorMessages(formId, errors);
+                }
+            });
+            return false;
+            // };
+        });
+
+        function showErrorMessages(formId, errorResponse) {
+
+            $.each(errorResponse.errors, function(key, value) {
+
+                // console.log(key);
+
+                $.each(value, function(key2, value2) {
+
+                    console.log(key, value2);
+                    $("#" + key + '_error').html(value2);
+                });
+            });
+        }
+
     </script>
     @include('admin.auth.toastr')
 

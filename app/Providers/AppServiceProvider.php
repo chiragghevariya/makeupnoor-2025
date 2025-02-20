@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Validator\CustomeValidator;
 use Validator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +25,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->validator->resolver(function($translator, $data, $rules, $messages) {
             return new CustomeValidator($translator, $data, $rules, $messages);
         });
+
+        Paginator::useBootstrap();
+
     }
 }

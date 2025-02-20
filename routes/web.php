@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,7 @@ Route::middleware(['auth'])->group(function () {
     //gallery
     Route::group(['prefix' => 'gallery', 'as' => 'gallery.'], function()
     {
-        Route::get('list', [GalleryController::class, 'index'])->name('index');
+        Route::get('index', [GalleryController::class, 'index'])->name('index');
         Route::get('listing', [GalleryController::class, 'listing'])->name('listing');
         Route::get('create', [GalleryController::class, 'create'])->name('create');
         Route::post('store', [GalleryController::class, 'store'])->name('store');
@@ -43,6 +44,14 @@ Route::middleware(['auth'])->group(function () {
         Route::post('update/{id}', [GalleryController::class, 'update'])->name('update');
         Route::post('delete', [GalleryController::class, 'delete'])->name('delete');
     });
+
+    Route::group(['prefix' => 'contact', 'as' => 'contact.'], function()
+    {
+        Route::get('list', [ContactController::class, 'index'])->name('index');
+        Route::get('delete/{id}', [ContactController::class, 'delete'])->name('delete');
+
+    });
+
 
 });
 

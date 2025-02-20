@@ -67,6 +67,12 @@
               <i class="menu-icon tf-icons ri-table-alt-line"></i>
               <div data-i18n="Gallery">Gallery</div>
             </a>
-          </li>
+        </li>
+        <li class="menu-item">
+            <a href="{{ route('contact.index') }}" class="menu-link">
+              <i class="menu-icon tf-icons ri-contacts-line"></i>
+              <div data-i18n="Contact">Contact</div>
+            </a>
+        </li>
     </ul>
 </aside>
