@@ -32,6 +32,7 @@ Route::post('login-post',[LoginController::class, 'loginPost'])->name('admin.log
 Route::middleware(['auth'])->group(function () {
 
     Route::get('dashboard',[AdminController::class, 'index'])->name('index');
+    Route::any('/save-tinymce-image', [AdminController::class, 'saveTinymceImage'])->name('save_tinymce_image');
 
     //gallery
     Route::group(['prefix' => 'gallery', 'as' => 'gallery.'], function()
@@ -42,7 +43,7 @@ Route::middleware(['auth'])->group(function () {
         Route::post('store', [GalleryController::class, 'store'])->name('store');
         Route::get('edit/{id}', [GalleryController::class, 'edit'])->name('edit');
         Route::post('update/{id}', [GalleryController::class, 'update'])->name('update');
-        Route::post('delete', [GalleryController::class, 'delete'])->name('delete');
+        Route::get('delete/{id}', [GalleryController::class, 'delete'])->name('delete');
     });
 
     Route::group(['prefix' => 'contact', 'as' => 'contact.'], function()

@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/css/pages/cards-analytics.css" />
 
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
@@ -60,13 +59,16 @@
 
       <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.css" />
 
     <!-- Row Group CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
     <!-- Form Validation -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/@form-validation/form-validation.css" />
+    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/select2/select2.css" />
+
+    @yield('style')
+
     <!-- Helpers -->
     <script src="{{ asset('') }}assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -162,10 +164,11 @@
 
     <script src="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.js"></script>
     <script src="{{ asset('') }}assets/js/forms-file-upload.js"></script>
+    <script src="{{ asset('') }}assets/vendor/libs/select2/select2.js"></script>
 
     <!-- Page JS -->
     <script src="{{ asset('') }}assets/js/tables-datatables-basic.js"></script>
-
+@yield('script')
     <script>
       document.addEventListener("DOMContentLoaded", function() {
           grecaptcha.ready(function() {
@@ -222,7 +225,7 @@
        <script>
         $('form.FromSubmit').submit(function(event) {
 
-            //alert("in");
+            // alert("in");
             // return false;
             tinyMCE.triggerSave();
             event.preventDefault();
@@ -271,7 +274,56 @@
             });
         }
 
+        tinymce.init({
+            selector: '.editor-tinymce',
+            height: 250,
+            directionality: "ltr",
+            plugins: 'advlist autolink lists link charmap print preview anchor searchreplace visualblocks code fullscreen insertdatetime media table contextmenu paste code image codesample',
+            toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image codesample',
+
+            images_upload_url: "{{ route('save_tinymce_image') }}",
+            automatic_uploads: false,
+            relative_urls: false,
+
+            images_upload_handler: function(blobInfo, success, failure) {
+                var xhr, formData;
+
+                xhr = new XMLHttpRequest();
+
+
+                xhr.withCredentials = false;
+                xhr.open('POST', "{{ route('save_tinymce_image') }}", true);
+
+                var generateToken = '{{ csrf_token() }}';
+                xhr.setRequestHeader("X-CSRF-Token", generateToken);
+
+                xhr.onload = function(data) {
+
+                    var json;
+
+                    if (xhr.status != 200) {
+                        failure('HTTP Error: ' + xhr.status);
+                        return;
+                    }
+
+                    json = JSON.parse(xhr.responseText);
+
+                    if (!json || typeof json.file_path != 'string') {
+                        failure('Invalid JSON: ' + xhr.responseText);
+                        return;
+                    }
+
+                    success(json.file_path);
+                };
+
+                formData = new FormData();
+                formData.append('file', blobInfo.blob(), blobInfo.filename());
+
+                xhr.send(formData);
+            },
+        });
     </script>
+
     @include('admin.auth.toastr')
 
   </body>

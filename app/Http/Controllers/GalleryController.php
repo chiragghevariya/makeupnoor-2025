@@ -23,6 +23,24 @@ class GalleryController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate(
+            [
+                'name' => 'required',
+                'slug' => 'required',
+                'status' => 'required',
+            ],
+        );
+
+        $obj = new Gallery;
+        $obj->name = $request->name;
+        $obj->slug = $request->slug;
+        $obj->status = $request->status;
+        $obj->description = $request->description;
+        $obj->save();
+
+        flashMessage('success', 'Record Added successfully!!');
+
+        return response()->json(['status' => 1]);
 
     }
 
