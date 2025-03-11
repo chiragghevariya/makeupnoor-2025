@@ -42,9 +42,15 @@ Route::middleware(['auth'])->group(function () {
         Route::get('create', [GalleryController::class, 'create'])->name('create');
         Route::post('store', [GalleryController::class, 'store'])->name('store');
         Route::get('edit/{id}', [GalleryController::class, 'edit'])->name('edit');
-        Route::post('update/{id}', [GalleryController::class, 'update'])->name('update');
+        Route::put('update/{id}', [GalleryController::class, 'update'])->name('update');
         Route::get('delete/{id}', [GalleryController::class, 'delete'])->name('delete');
     });
+
+     Route::post('/gallery/imagestore', [GalleryController::class, 'imagestore'])->name('admin.gallery.imagestore');
+     Route::get('/gallery/{id}/images', [GalleryController::class, 'images'])->name('admin.gallery.images');
+     Route::post('/gallery/sliderrmv', [GalleryController::class, 'sliderrmv'])->name('admin.gallery.sliderrmv');
+
+
 
     Route::group(['prefix' => 'contact', 'as' => 'contact.'], function()
     {

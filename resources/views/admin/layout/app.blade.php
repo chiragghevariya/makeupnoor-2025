@@ -59,13 +59,20 @@
 
       <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.css" />
+
+    <!-- Dropzone JS -->
+    <!-- <script src="{{asset('assets/admin/js/plugin/dropzone/jquery.dropzone.min.js')}}"></script> -->
+
 
     <!-- Row Group CSS -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.css" />
     <!-- Form Validation -->
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/@form-validation/form-validation.css" />
     <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/select2/select2.css" />
+    <!-- <link rel="stylesheet" href="{{asset('assets/admin/css/dropzone.css')}}"> -->
+        <link rel="stylesheet" href="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.css" />
+
+
 
     @yield('style')
 
@@ -162,7 +169,9 @@
     <script src="{{ asset('') }}assets/vendor/libs/@form-validation/bootstrap5.js"></script>
     <script src="{{ asset('') }}assets/vendor/libs/@form-validation/auto-focus.js"></script>
 
-    <script src="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.js"></script>
+    <!-- <script src="{{ asset('') }}assets/vendor/libs/dropzone/dropzone.js"></script> -->
+        <!-- <script src="{{asset('assets/admin/js/plugin/dropzone/jquery.dropzone.min.js')}}"></script> -->
+
     <script src="{{ asset('') }}assets/js/forms-file-upload.js"></script>
     <script src="{{ asset('') }}assets/vendor/libs/select2/select2.js"></script>
 

@@ -24,14 +24,12 @@
                 </div>
             </div>
         </div>
-
         <div class="card-body">
             <table class=" table table-bordered">
                 <thead>
                   <tr>
                     <th>id</th>
                     <th>Title</th>
-                    <th>Image</th>
                     <th>Status</th>
                     <th>Action</th>
                   </tr>
@@ -42,10 +40,7 @@
                     <tr>
                         <th>{{ $v->id }}</th>
                         <th>{{ $v->name }}</th>
-                        <th>
-                            <img src="{{ $v->getGalleryImageUrl() }}" class="img-list" loading="lazy" />
-                        </th>
-                        <th>{{ $v->status }}</th>
+                        <th>{{ $v->status == 1 ? 'Active' : 'Inactive' }}</th>
                         <th>
                          <a href="{{ route('gallery.edit', $v->id) }}"><i class="ri-pencil-line"></i></a>
                          <a href="javascript:void(0);" class="delete"
@@ -65,5 +60,26 @@
 @endsection
 
 @section('script')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).on('click', '.delete', function(e) {
+        e.preventDefault();
+        let url = $(this).data('link');
 
+        if (confirm('Are you sure you want to delete this gallery?')) {
+            $.ajax({
+                url: url,
+                type: 'DELETE',
+                data: {
+                    _token: "{{ csrf_token() }}"
+                },
+                success: function(response) {
+                    alert(response.message);
+                    location.reload();
+                }
+            });
+        }
+    });
+</script>
 @endsection
+
