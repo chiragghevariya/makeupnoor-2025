@@ -25,6 +25,27 @@ class HomeController extends Controller
     	return view('front.contact');
     }
 
+      public function faceMakeup()
+    {
+
+        return view('home');
+    }
+       public function bridalMakeup()
+    {
+
+        return view('home');
+    }
+       public function fashionMakeup()
+    {
+
+        return view('home');
+    }
+       public function filmMakeup()
+    {
+
+        return view('home');
+    }
+
     public function contactPost(request $request)
     {
 

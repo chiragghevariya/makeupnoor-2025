@@ -91,6 +91,33 @@
                             </div>
                         </div>
 
+                        <div class="d-flex gap-3 p-0">
+                            <div class="col-md-6">
+                                <div class="card-body mb-0">
+                                    <div class="form-floating form-floating-outline">
+                                        <input type="text" id="meta_title" name="meta_title" class="form-control" data-validate="required" placeholder="Meta Title" />
+                                        <label for="meta_title">Meta Title</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body mb-0">
+                                    <div class="form-floating form-floating-outline">
+                                        <input type="text" id="meta_keywords" name="meta_keywords" class="form-control" data-validate="required" placeholder="Meta Keywords" />
+                                        <label for="meta_keywords">Meta Keywords</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 p-0">
+                          <div class="col-md-6">
+                                <div class="card-body mb-0">
+                                    <div class="form-floating form-floating-outline">
+                                        <input type="text" id="meta_description" name="meta_description" class="form-control" data-validate="required" placeholder="Meta Description" />
+                                        <label for="meta_description">Meta Description</label>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="col-md-6">
                             <div class="card-body mb-0">
                                 <div class="form-floating form-floating-outline">
@@ -103,6 +130,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                         <div class="col-md-12">
                             <div class="card-body mb-0">

@@ -23,6 +23,12 @@ Route::get('/about',[HomeController::class, 'about'])->name('about');
 Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
 Route::post('/contact-post',[HomeController::class, 'contactPost'])->name('contact-post');
 Route::get('/gallery',[HomeController::class, 'gallery'])->name('gallery');
+Route::get('services/face-makeup.html',[HomeController::class, 'faceMakeup'])->name('face-makeup');
+Route::get('services/bridal-makeup.html',[HomeController::class, 'bridalMakeup'])->name('bridal-makeup');
+Route::get('services/fashion-makeup.html',[HomeController::class, 'fashionMakeup'])->name('fashion-makeup');
+Route::get('services/film-makeup.html',[HomeController::class, 'filmMakeup'])->name('film-makeup');
+Route::get('/portfolio/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
+
 
 
 Route::get('login',[LoginController::class, 'login'])->name('admin.login');

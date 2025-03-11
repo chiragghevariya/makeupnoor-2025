@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="@yield('meta-title')">
+    <meta name="description" content="@yield('meta-description')">
+    <meta name="keywords" content="@yield('meta-keywords')">
+
     <title>Makeupnoor</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('') }}front/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@300;400;500;600;700&display=swap">

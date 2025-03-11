@@ -33,6 +33,9 @@ class GalleryController extends Controller
             'slug' => $request->slug,
             'status' => $request->status,
             'description' => $request->description,
+            'meta_title' => $request->meta_title,
+            'meta_keywords' => $request->meta_keywords,
+            'meta_description' => $request->meta_description,
         ]);
 
         
@@ -61,13 +64,15 @@ class GalleryController extends Controller
             'slug' => 'required',
             'status' => 'required',
         ]);
-
         $gallery = Gallery::findOrFail($id);
         $gallery->update([
             'name' => $request->name,
             'slug' => $request->slug,
             'status' => $request->status,
             'description' => $request->description,
+            'meta_title' => $request->meta_title,
+            'meta_keywords' => $request->meta_keywords,
+            'meta_description' => $request->meta_description,
         ]);
 
         flashMessage('success', 'Record updated successfully!');
@@ -121,5 +126,13 @@ class GalleryController extends Controller
             @unlink('assets/front/img/gallery/images/' . $pi->image);
             $pi->delete();
             return $pi->id;
+        }
+
+    public function show($slug)
+        {
+            $gallery = Gallery::where('slug', $slug)->firstOrFail();
+            $images = GalleryImage::where('gallery_id', $gallery->id)->get(); // Fetch images for the gallery
+
+            return view('front.show', compact('gallery', 'images'));
         }
     }
