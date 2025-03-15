@@ -138,6 +138,7 @@
       </script>
 @yield('script')
 @include('admin.auth.toastr')
+@include('front.layout.common')
 
 </body>
 </html>

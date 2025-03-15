@@ -57,7 +57,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="text-left">
-                                <p>© Copyright 2024. All right reserved.</p>
+                                <p>© Copyright 2025. All right reserved.</p>
                             </div>
                         </div>
                         <div class="col-md-5">

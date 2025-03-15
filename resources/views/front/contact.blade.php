@@ -49,7 +49,9 @@
                 </div>
                 <div class="col-md-6">
                     <h6>GET IN TOUCH</h6>
-                        <form id="contact" class="row FromSubmit" action="{{ route('contact-post') }}" method="POST" >
+                            <div id="successMessage" class="alert alert-success d-none"></div>
+
+                        <form id="contact" class="row FromSubmit postFormcommon" action="{{ route('contact-post') }}" method="POST" >
                             @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -78,7 +80,11 @@
                           <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                         @endif
 
-
+ <div id="loader" class="text-center d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <button class="btn fl-btn" type="submit">Send</button>

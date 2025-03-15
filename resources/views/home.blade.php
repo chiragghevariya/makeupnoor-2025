@@ -559,15 +559,18 @@
                 </div>
                 <div class="col-md-6">
                     <h6>GET IN TOUCH</h6>
-                    <form method="post" class="row">
+                            <div id="successMessage" class="alert alert-success d-none"></div>
+
+                    <form action="{{ route('contact-post') }}" method="POST" class="row  postFormcommon">
+                            @csrf 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name *" required>
+                                <input type="text" class="form-control" name="name" placeholder="Name *">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email / Phone">
+                                <input type="text" name="email" class="form-control" placeholder="Email / Phone">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -575,6 +578,15 @@
                                 <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
                             </div>
                         </div>
+                         @if (env('IS_CAPTCHA_ENABLE'))
+                        <!-- Hidden input for reCAPTCHA response -->
+                          <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                        @endif
+                         <div id="loader" class="text-center d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <button class="btn fl-btn" type="submit">Hello!</button>

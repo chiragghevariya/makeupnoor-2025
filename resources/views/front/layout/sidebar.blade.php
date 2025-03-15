@@ -2,7 +2,7 @@
     <aside id="ovon-aside">
         <!-- Logo -->
         <div class="ovon-logo">
-            <a href="index.html"> <img src="{{ asset('') }}front/img/logo-dark.png" alt=""> </a>
+            <a href="{{ route('home') }}"> <img src="{{ asset('') }}front/img/logo-dark.png" alt=""> </a>
         </div>
         <!-- Menu -->
         <nav class="ovon-main-menu">
@@ -11,38 +11,24 @@
                 <li><a href="{{ route('about') }}">About</a></li>
                 <li class="ovon-sub"><a>Services <i class="ti-angle-down"></i><span class="holder"></span></a>
                     <ul style="display: none;">
-                        <!-- <li><a href="{{ route ('face-makeup') }}">Face Makeup</a></li>
-                        <li><a href="{{ route ('bridal-makeup') }}">Bridal Makeup</a></li>
-                        <li><a href="{{ route ('fashion-makeup') }}">Fashion Makeup</a></li>
-                        <li><a href="{{ route ('film-makeup') }}">Film Makeup</a></li> -->
-                        <li><a href="#">Face Makeup</a></li>
-                        <li><a href="#">Bridal Makeup</a></li>
-                        <li><a href="#">Fashion Makeup</a></li>
-                        <li><a href="#">Film Makeup</a></li>
-                    </ul>
-                </li>
-                  <!--  <li class="ovon-sub"><a>PortFolio <i class="ti-angle-down"></i><span class="holder"></span></a>
-                    <ul style="display: none;">
                         <li><a href="{{ route ('face-makeup') }}">Face Makeup</a></li>
                         <li><a href="{{ route ('bridal-makeup') }}">Bridal Makeup</a></li>
                         <li><a href="{{ route ('fashion-makeup') }}">Fashion Makeup</a></li>
-                        <li><a href="{{ route ('film-makeup') }}">Film Makeup</a></li>
+                        <li><a href="{{ route ('film-makeup') }}">Film Makeup</a></li> 
                     </ul>
-                </li> -->
+                </li>
                <li class="ovon-sub">
-    <a>Portfolio <i class="ti-angle-down"></i><span class="holder"></span></a>
-    <ul style="display: none;">
-@if(isset($galleries) && count($galleries) > 0)
-            @foreach($galleries as $gallery)
-                <li><a href="{{ route('portfolio.show', $gallery->slug) }}">{{ $gallery->name }}</a></li>
-            @endforeach
-        @else
-            <li><a href="#">No Portfolio Available</a></li>
-        @endif
-    </ul>
-</li>
-
-
+                <a>Portfolio <i class="ti-angle-down"></i><span class="holder"></span></a>
+                <ul style="display: none;">
+            @if(isset($galleries) && count($galleries) > 0)
+                        @foreach($galleries as $gallery)
+                            <li><a href="{{ route('portfolio.show', $gallery->slug) }}">{{ $gallery->name }}</a></li>
+                        @endforeach
+                    @else
+                        <li><a href="#">No Portfolio Available</a></li>
+                    @endif
+                </ul>
+            </li>
 
                 <li><a href="#" data-scroll-nav="6">Blog</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
@@ -57,7 +43,7 @@
                 <li><a href="#"><i class="ti-facebook"></i></a></li>
                 <li><a href="#"><i class="ti-pinterest"></i></a></li>
             </ul>
-            <p>&copy; 2025 OVON by DuruThemes.</p>
+            <p>© Copyright 2025. All right reserved.</p>
 
         </div>
     </aside>

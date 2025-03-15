@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Validator;
+
 
 
 class HomeController extends Controller
@@ -28,33 +30,34 @@ class HomeController extends Controller
       public function faceMakeup()
     {
 
-        return view('home');
+        return view('front.facemakeup');
     }
        public function bridalMakeup()
     {
 
-        return view('home');
+        return view('front.bridalmakeup');
     }
        public function fashionMakeup()
     {
 
-        return view('home');
+        return view('front.fashionmakeup');
     }
        public function filmMakeup()
     {
 
-        return view('home');
+        return view('front.filmmakeup');
     }
 
     public function contactPost(request $request)
     {
 
         $messages = [];
-		$rules = [
-			'name' => ['required'],
-			'email' => ['required'],
-		];
 
+   $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'message' => 'required',
+        ]);
 		if(env('IS_CAPTCHA_ENABLE')){
 
 			$rules['recaptcha_response'] = ['required','VerifyRecaptcha'];
@@ -62,16 +65,21 @@ class HomeController extends Controller
 			$messages['recaptcha_response.verify_recaptcha'] = 'ReCAPTCHA verification failed.';
 		}
 
-        $obj = new Contact;
-        $obj->name = $request->name;
-        $obj->email = $request->email;
-        $obj->message = $request->message;
+     
+         $contact = Contact::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message, // Assign post to logged-in user
 
-        $obj->save();
+        ]);
 
+
+   if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
         flashMessage('success', 'email sent Successfully !!');
 
-        return response()->json(['status' => true,'redirect_url' => route('contact')]);
+        return response()->json(['status' => 'email sent Successfully !!','redirect_url' => route('contact')]);
 
     }
 

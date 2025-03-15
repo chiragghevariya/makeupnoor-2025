@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
 {
     View::composer('*', function ($view) {
-        $galleries = Gallery::all(); // Fetch all galleries from DB
+        $galleries = Gallery::where('status', 1)->get(); // Fetch only active galleries
         $view->with('galleries', $galleries);
     });
 }
