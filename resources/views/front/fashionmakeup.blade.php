@@ -27,27 +27,10 @@
                             <div class="col-md-12">
                                 <div class="img"> <img src="{{ asset('assets/front/img/services/s2.jpg') }}" class="img-fluid mb-30" alt=""> </div>
                                 <h3>Fashion Makeup</h3>
-                                <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare. Morbi mollis a enim nec ullase emcorper. Proin condimentum ut mauris ut placerat. Donec commodo diam lorem, commodo viverra metus mollis nec. Nam vehicula ipsum faucibus at eros vitae dui pulvina the ornare.</p>
-                                <p>Morbi mollis a enim nec ullamcorper. Proin condimentum ut mauris ut placerat. Donec commodo diamlorem, commodo viverra metus mollis vehicula ipsum faucibus.</p>
+                                <p>At Noor Makeup Artists, we specialize in professional fashion makeup, creating stunning and flawless looks for photoshoots, runway shows, and special events. With a deep understanding of trends, skin tones, and styling, Noor ensures that every look is tailored to perfection. Our expert techniques enhance facial features, bringing out elegance and confidence in every client. Whether it's a bold, high-fashion statement or a natural, radiant glow, Noor’s passion for makeup artistry guarantees a picture-perfect transformation.</p>
+                                <p><b>Experience the magic of Noor’s fashion makeup—where beauty meets creativity!</b></p>
                             </div>
                         </div>
-                        <div class="row services-price mb-30">
-                            <div class="col-md-12">
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Wash<span class="price">$20,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Coloring<span class="price">$75,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Blow Dry Hair <span class="price">$30,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <!-- gallery -->
                         <div class="row mb-30">
                             <div class="col-md-6 gallery-item">

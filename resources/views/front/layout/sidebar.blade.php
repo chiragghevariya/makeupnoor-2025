@@ -2,7 +2,7 @@
     <aside id="ovon-aside">
         <!-- Logo -->
         <div class="ovon-logo">
-            <a href="{{ route('home') }}"> <img src="{{ asset('') }}front/img/logo-dark.png" alt=""> </a>
+            <a href="{{ route('home') }}"> <span>NOOR</span></span> </a>
         </div>
         <!-- Menu -->
         <nav class="ovon-main-menu">

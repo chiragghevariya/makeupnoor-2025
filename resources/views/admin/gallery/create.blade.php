@@ -17,6 +17,9 @@
     position: relative;
     display: inline-block;
 }
+.cke_notification.cke_notification_warning{
+    display: none;
+}
 
 .remove-btn {
     position: absolute;
@@ -134,7 +137,7 @@
 
                         <div class="col-md-12">
                             <div class="card-body mb-0">
-                                <textarea id="editor" name="description">{{ old('content') }}</textarea>
+                            <textarea id="description" name="description" class="form-control">{{ old('content') }}</textarea>
                             </div>
                         </div>
                     </div>
@@ -154,6 +157,7 @@
 </div>
 <script src="{{ asset('assets/admin/js/plugin/dropzone/jquery.dropzone.min.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
 <script>
 
 Dropzone.autoDiscover = false;
@@ -217,6 +221,9 @@ function removeImage(fileId) {
     });
 }
 
+</script>
+<script>
+    CKEDITOR.replace('description');
 </script>
 
 @endsection

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('') }}front/css/magnific-popup.css">
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.carousel.css">
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="{{ asset('') }}front/css/style.css">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css')}}?v={{rand()}}">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->

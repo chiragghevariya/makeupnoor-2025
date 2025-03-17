@@ -62,7 +62,9 @@
     .remove-btn:hover {
         background: red;
     }
-
+   .cke_notification.cke_notification_warning{
+    display: none;
+}
     /* Responsive */
     @media (max-width: 768px) {
         .image-box {
@@ -178,7 +180,7 @@
 
                         <div class="col-md-12">
                             <div class="card-body mb-0">
-                                <textarea id="editor" name="description">{{ $editdata->description }}</textarea>
+                                <textarea id="description" name="description">{{ $editdata->description }}</textarea>
                             </div>
                         </div>
                     </div>
@@ -199,6 +201,9 @@
 
 <script src="{{ asset('assets/admin/js/plugin/dropzone/jquery.dropzone.min.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+
 
 <script>
 
@@ -296,6 +301,9 @@
     }
 }
 
+</script>
+<script>
+    CKEDITOR.replace('description');
 </script>
 
 @endsection

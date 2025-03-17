@@ -2,8 +2,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-30">
-                        <a href="index.html"> <img src="{{ asset('') }}front/img/logo-dark.png" alt=""> </a>
-                        <p>Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim daibus miss neuenete ultrie ectus.</p>
+                        <div class="ovon-logo">
+                        <a href="{{ route('home') }}"> <span style="font-size: 40px;">NOOR</span></span> </a>
+                    </div>
+                        <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.</p>
                         <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-pinterest"></i></a> </div>
                     </div>
                     <div class="col-md-4 mb-30">
@@ -12,19 +14,20 @@
                             <li>
                                 <div class="icon"><i class="ti-headphone-alt"></i></div>
                                 <div class="text">
-                                    <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
+                                    <p><a href="tel:+919382154932">+91 93821 54932</a></p>
+                                    <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"> <i class="ti-email"></i> </div>
                                 <div class="text">
-                                    <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
+                                <p><a href="mailto:makeupnoor@gmail.com">makeupnoor@gmail.com</a></p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"> <i class="ti-location-pin"></i> </div>
                                 <div class="text">
-                                    <p>525 West Ave, CT 06850 Norwalk</p>
+                                    <p><a href="https://www.google.com/maps/place/Appasamy+Hospitals/@13.0725445,80.2060615,15.4z/data=!4m6!3m5!1s0x3a5266995cdc1e3b:0x9cd2c421ab3886ec!8m2!3d13.0733385!4d80.2147624!16s%2Fg%2F11cktm8wkt?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">#21 A, VJ Arcade, Poonamallee High Rd, near Appasamy Hospital, Arumbakkam, Chennai, Tamil Nadu 600106</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -36,15 +39,15 @@
                                 <tbody>
                                     <tr>
                                         <td>Mon - Fri :</td>
-                                        <td>10am - 7pm</td>
+                                        <td>9:30am - 9pm</td>
                                     </tr>
                                     <tr>
                                         <td>Saturday :</td>
-                                        <td>10am - 5pm</td>
+                                        <td>9:30am - 9pm</td>
                                     </tr>
                                     <tr>
                                         <td>Sunday :</td>
-                                        <td><a href="tel:+1-650-444-0000">By Call</a></td>
+                                        <td>10am - 7pm</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -59,9 +62,6 @@
                             <div class="text-left">
                                 <p>© Copyright 2025. All right reserved.</p>
                             </div>
-                        </div>
-                        <div class="col-md-5">
-                            <p class="right"><a href="#">Terms &amp; Conditions</a></p>
                         </div>
                     </div>
                 </div>

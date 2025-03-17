@@ -64,7 +64,9 @@ class HomeController extends Controller
 			$messages['recaptcha_response.required'] = 'The ReCAPTCHA verification field is required.';
 			$messages['recaptcha_response.verify_recaptcha'] = 'ReCAPTCHA verification failed.';
 		}
-
+   if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
      
          $contact = Contact::create([
             'name' => $request->name,
@@ -74,9 +76,7 @@ class HomeController extends Controller
         ]);
 
 
-   if ($validator->fails()) {
-            return response()->json(['errors' => $validator->errors()], 422);
-        }
+
         flashMessage('success', 'email sent Successfully !!');
 
         return response()->json(['status' => 'email sent Successfully !!','redirect_url' => route('contact')]);

@@ -25,26 +25,10 @@
                     <div class="col-md-8 animate-box" data-animate-effect="fadeInUp">
                          <div class="row">
                             <div class="col-md-12">
-                                <div class="img"> <img src="{{ asset('assets/front/img/services/s6.jpg') }}" class="img-fluid mb-30" alt=""> </div>
-                                <h3>Film Makeup</h3>
-                                <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare. Morbi mollis a enim nec ullase emcorper. Proin condimentum ut mauris ut placerat. Donec commodo diam lorem, commodo viverra metus mollis nec. Nam vehicula ipsum faucibus at eros vitae dui pulvina the ornare.</p>
-                                <p>Morbi mollis a enim nec ullamcorper. Proin condimentum ut mauris ut placerat. Donec commodo diamlorem, commodo viverra metus mollis vehicula ipsum faucibus.</p>
-                            </div>
-                        </div>
-                        <div class="row services-price mb-30">
-                            <div class="col-md-12">
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Wash<span class="price">$20,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Coloring<span class="price">$75,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Blow Dry Hair <span class="price">$30,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
+                                <div class="img"> <img src="{{ asset('assets/front/img/services/film-makup.jpg') }}" class="img-fluid mb-30" alt="film-makup"> </div>
+                                <h3>Noor's Film Makeup</h3>
+                                <p>Noor Makeup Artists is a trusted name in the film industry, known for delivering exceptional <b>cinematic makeup</b> that enhances on-screen presence. With years of experience, Noor has worked with many renowned cine stars, including <b>Samantha, Namitha, Gowthami, Shruti Haasan, Devayani, Roma Cheran, and many more.</b> His expertise in creating flawless, camera-ready looks ensures that actors and actresses shine under the spotlight. Whether it’s for movies, television, or promotional shoots, Noor’s meticulous attention to detail and passion for makeup artistry bring characters to life with perfection.</p>
+                                <p><b>Experience star-quality makeup with Noor—where every look is crafted for the big screen!</b></p>
                             </div>
                         </div>
                         

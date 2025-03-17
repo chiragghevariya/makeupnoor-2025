@@ -104,14 +104,14 @@ class GalleryController extends Controller
         }
 
         $filename = uniqid() . '.jpg';
-        $img->move('assets/front/img/gallery/images/', $filename);
+        $img->move('public/assets/front/img/gallery/images/', $filename);
 
         $galleryImage = new GalleryImage();
         $galleryImage->gallery_id = $request->gallery_id ?? null;
         $galleryImage->image = $filename;
         $galleryImage->save();
 
-        return response()->json(['status' => 'success', 'file_id' => $galleryImage->id, 'image_url' => asset('assets/front/img/gallery/images/' . $filename)]);
+        return response()->json(['status' => 'success', 'file_id' => $galleryImage->id, 'image_url' => asset('public/assets/front/img/gallery/images/' . $filename)]);
     }
 
      public function images($gallery_id)
@@ -123,7 +123,7 @@ class GalleryController extends Controller
     public function sliderrmv(Request $request)
         {
             $pi = GalleryImage::findOrFail($request->fileid);
-            @unlink('assets/front/img/gallery/images/' . $pi->image);
+            @unlink('public/assets/front/img/gallery/images/' . $pi->image);
             $pi->delete();
             return $pi->id;
         }

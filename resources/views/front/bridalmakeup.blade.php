@@ -29,27 +29,23 @@
                                 <img src="{{ asset('assets/front/img/services/s3.jpg') }}" class="img-fluid mb-30" alt="">
                             </div>
                             <h3>Bridal Makeup</h3>
-                            <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare. Morbi mollis a enim nec ullase emcorper. Proin condimentum ut mauris ut placerat. Donec commodo diam lorem, commodo viverra metus mollis nec. Nam vehicula ipsum faucibus at eros vitae dui pulvina the ornare.</p>
-                            <p>Morbi mollis a enim nec ullamcorper. Proin condimentum ut mauris ut placerat. Donec commodo diamlorem, commodo viverra metus mollis vehicula ipsum faucibus.</p>
+                            <p>Bridal looks should be a true reflection of a bride’s personality and personal style. Today’s brides expect more from their wedding day salon services—more fun, more beauty, and more individuality. And why not? After all, it’s one of the most significant days of their lives!</p>
+                            <p>Hiring an experienced makeup artist is essential. When it comes to your once-in-a-lifetime look, settling for a budget beautician isn’t worth the risk. Your makeup should not only look flawless in person but also translate beautifully on camera. A professional makeup artist bridges this gap, ensuring you look radiant both in real life and in photographs.</p>
+                            <p>Planning your bridal look? Consider your hair and makeup carefully. Consult with your makeup artist to understand what works best for you and what’s needed to achieve the perfect look for your big day.</p>
+                            <br />
+                            <h2>How Do You Want to Look?</h2>
+                            <p>✨ <b>Elegant & Natural:</b> A subtle makeup look that enhances your natural beauty with a flawless glow. Minimal yet striking eye makeup, glossy, fruity lips, and a soft, sophisticated hairstyle—either tong curls or sleek straight hair.</p>
+                            <p>✨ <b>Traditional & Regal:</b> A classic Indian bridal look using copper, bronze, and gold tones for a rich, timeless appearance. Traditional hairstyles like the Indian choti or a Devdas-inspired look add grace and elegance.</p>
+                            <p>✨ <b>Glamorous Cocktail/Party Look:</b> A chance to bring out the diva in you! Depending on your outfit, we create stunning makeup styles—from glittery, sparkly looks to bold, dramatic eyes. Whether you’re wearing a sequined corset top with a lehenga or an Indo-Western draped skirt, we ensure your hair and makeup perfectly complement your attire. Soft curls or glamorous updos complete the look.</p>
+                            <p><b>At Noor Makeup Artist,</b> we take a modern and personalized approach to bridal beauty, ensuring every bride gets the stunning look she deserves. We offer professional bridal makeup services for brides, bridesmaids, and mothers of the bride.</p>
+                            <p>During your <b>trial makeup session,</b> you’ll have the opportunity to share your ideal bridal look, ensuring you look nothing short of perfection on your wedding day. Basic hairstyling services are also available upon request.</p>
+                            <p>On your big day, Noor will arrive at your preferred location, allowing ample time to perfect your look. You’ll also receive expert tips on maintaining your makeup so you stay fresh and confident throughout the celebration.</p>
+                            <p>When Noor’s work is complete, you won’t just look beautiful—you’ll feel it too, creating timeless memories captured in stunning photographs.</p>
+                            <p><b>Look breathtaking on your big day. Begin your journey beautifully.</b><br />
+                            Contact Noor at <a href="mailto:makeupnoor@gmail.com" target="_blank"><b>makeupnoor@gmail.com</b></a> for a personalized quote.
+                            </p>
                         </div>
                     </div>
-                        <div class="row services-price mb-30">
-                            <div class="col-md-12">
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Wash<span class="price">$20,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Coloring<span class="price">$75,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Blow Dry Hair <span class="price">$30,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
                         <!-- gallery -->
                         <div class="row mb-30">
                             <div class="col-md-6 gallery-item">

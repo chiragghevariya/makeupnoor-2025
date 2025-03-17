@@ -10,7 +10,7 @@
                         <div class="col-md-12 caption">
                             <hr class="line line-hr-primary">
                             <h5>Makeup Artist</h5>
-                            <h1>Olivia Vonda</h1>
+                            <h1>NOOR MOHAMMAD</h1>
                             <a href="#about" class="btn fl-btn">About Me</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                         <div class="col-md-12 caption">
                             <hr class="line line-hr-primary">
                             <h5>Our Services</h5>
-                            <h1>Face Makeup</h1>
+                            <h1>BRIDAL MAKEUP</h1>
                             <a href="#services" class="btn fl-btn">Services</a>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="col-md-12 caption">
                             <hr class="line line-hr-primary">
                             <h5>Our Services</h5>
-                            <h1>Nail Makeup</h1>
+                            <h1>CINE MAKEUP</h1>
                             <a href="#services" class="btn fl-btn">Services</a>
                         </div>
                     </div>
@@ -57,46 +57,26 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="about-img mb-30 img-fluid animate-box" data-animate-effect="fadeInUp"
-                        style="background-image: url(front/img/about.jpg);">
-                        <div class="about-img-2 signature" style="background-image: url(front/img/signature.png);"></div>
+                        style="background-image: url(public/front/img/noor-photo.jpeg);">
                     </div>
                 </div>
                 <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
                     <div class="title"> <span>About Me</span>
-                        <h2>Olivia Vonda</h2>
+                        <h2>NOOR MOHAMMAD</h2>
                         <hr class="line line-hr-secondary">
                     </div>
-                    <p>Hi, I'm Olivia a Professional Makeup Artist. Quisque luctus tincidunt enim dapibus pharetra neue
-                        ultricies at. Morbi dapibus mauris id scelerisque placerat nula massa lacinia orci in facilisis
-                        nulla quam volutpat lectus. Nunc elementum ante commodo felis hendrerit.</p>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Makeup a urnue sem
-                        tempor ullamcorper. Praesent sapien felis porttitor ut eros pharetra fermentum solli citudi metus.
-                        Quisque facilisis libero libero eget cursus ex maximus non. Quisque volutpat venenatis lacus. Nullam
-                        ac sapien sed metus varius mattis et vel magna.</p>
-                    <br />
-                    <!-- Awards -->
-                    <div class="row awards">
-                        <div class="col-md-12">
-                            <div class="title"> <span>Awards</span> </div>
-                        </div>
-                        <div class="col-md-12 owl-carousel owl-theme">
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('') }}front/img/awards/1.jpg" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('') }}front/img/awards/2.jpg" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('') }}front/img/awards/3.jpg" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('') }}front/img/awards/4.jpg" alt=""></a>
-                            </div>
-                            <div class="awards-logo">
-                                <a href="#"><img src="{{ asset('') }}front/img/awards/5.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
+                    <p>Hi! I’m Noor, a professional makeup artist based in Chennai, specializing in bridal makeup and cine makeup.</p>
+                    <p>My journey in the makeup industry began in 1999 when I started as a makeup artist under my mentor, Mr. Ashokan, for three years. After gaining valuable experience, I ventured out independently. In the early years of my career, I worked as a makeup artist for newsreaders on JAYA TV and VJs on SS Music for four years.</p>
+                    <p> As a registered member of the South Indian Cine Makeup and Hair Stylist Association, I’ve had the privilege of working in South Indian films, fashion shows, individual portfolios, television, and print media.</p>
+                    <p>My dedication to the makeup industry has led to collaborations with renowned artists and talented photographers. Every experience has been a learning opportunity, contributing to my growth and expertise in this field.</p>
+                    <p>With over 20 years of experience as a professional makeup and hair artist in Chennai, India, I have worked as a bridal makeup, cine makeup artist and specialist, bringing fresh ideas to the industry.</p>
+                    <p>Noor Makeup Artists is your go-to studio for all your makeup and hairstyling needs, including fashion and bridal makeup. Our clientele includes top brands and celebrities.</p>
+                   <p>We’re always excited about new opportunities! Feel free to reach us at 
+                    <a href="tel:+919382154932" target="_blank">+91-9382154932</a> / 
+                    <a href="tel:+919840579576" target="_blank">9840579576</a> or email us at 
+                    <a href="mailto:makeupnoor@gmail.com" target="_blank">makeupnoor@gmail.com</a> / 
+                    <a href="mailto:noor@makeupnoor.com" target="_blank">noor@makeupnoor.com</a>.
+                </p>
                 </div>
             </div>
         </div>
@@ -118,67 +98,35 @@
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s7.jpg"
-                                    alt=""> </div>
-                            <div class="con">
-                                <h5><a href="eye-makeup.html">Eye Makeup</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s1.png"
-                                    alt=""> </div>
-                            <div class="con">
-                                <h5><a href="hair-makeup.html">Hair Makeup</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
                             <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s8.jpg"
                                     alt=""> </div>
                             <div class="con">
-                                <h5><a href="face-makeup.html">Face Makeup</a></h5>
+                                <h5><a href="{{ route ('face-makeup') }}">Face Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s3.jpg"
                                     alt=""> </div>
                             <div class="con">
-                                <h5><a href="bridal-makeup.html">Bridal Makeup</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s4.jpg"
-                                    alt=""> </div>
-                            <div class="con">
-                                <h5><a href="child-face-painting.html">Child Face Painting</a></h5>
+                                <h5><a href="{{ route ('bridal-makeup') }}">Bridal Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s2.jpg"
                                     alt=""> </div>
                             <div class="con">
-                                <h5><a href="fashion-makeup.html">Fashion Makeup</a></h5>
+                                <h5><a href="{{ route ('fashion-makeup') }}">Fashion Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
                             <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s5.jpg"
                                     alt=""> </div>
                             <div class="con">
-                                <h5><a href="fantastic-makeup.html">Fantastic Makeup</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s6.jpg"
-                                    alt=""> </div>
-                            <div class="con">
-                                <h5><a href="effect-makeup.html">Effect Makeup</a></h5>
+                                <h5><a href="{{ route ('film-makeup') }}">Film Makeup</a></h5>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-right mt-5"> <a class="underline-text" href="services.html">Services <i
-                            class="ti-arrow-right"></i></a> </div>
             </div>
         </div>
     </section>
@@ -277,88 +225,6 @@
     </section>
     <!-- line -->
     <hr class="line-vr-section">
-    <!-- Pricing -->
-    <section id="pricing" class="section-padding bg-grey" data-scroll-index="4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title mb-30"> <span>Prices</span>
-                        <h2>Pricing Plan</h2>
-                        <hr class="line line-hr-secondary">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="price-list">
-                        <div class="price-box-inner" style="background-image: url(front/img/pricing/a.jpg)">
-                            <h3>General Prices</h3>
-                            <ul>
-                                <li>
-                                    <p class="package">Eye Makeup</p>
-                                    <div class="border-middle"></div><span class="price">$100</span>
-                                </li>
-                                <li>
-                                    <p class="package">Hair Makeup</p>
-                                    <div class="border-middle"></div><span class="price">$180</span>
-                                </li>
-                                <li>
-                                    <p class="package">Bridal Makeup</p>
-                                    <div class="border-middle"></div><span class="price">$600</span>
-                                </li>
-                                <li>
-                                    <p class="package">Child Face Painting</p>
-                                    <div class="border-middle"></div><span class="price">$60</span>
-                                </li>
-                                <li>
-                                    <p class="package">Effect Makeup</p>
-                                    <div class="border-middle"></div><span class="price">$150</span>
-                                </li>
-                                <li>
-                                    <p class="package">Face Makeup</p>
-                                    <div class="border-middle"></div><span class="price">$120</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="price-list">
-                        <div class="price-box-inner" style="background-image: url(front/img/pricing/b.jpg)">
-                            <h3>Bridal Haircut</h3>
-                            <ul>
-                                <li>
-                                    <p class="package">Curly Haircute &amp; Colors</p>
-                                    <div class="border-middle"></div><span class="price">$250</span>
-                                </li>
-                                <li>
-                                    <p class="package">Color corrections</p>
-                                    <div class="border-middle"></div><span class="price">$100</span>
-                                </li>
-                                <li>
-                                    <p class="package">Hair Wash</p>
-                                    <div class="border-middle"></div><span class="price">$50</span>
-                                </li>
-                                <li>
-                                    <p class="package">Hair Coloring</p>
-                                    <div class="border-middle"></div><span class="price">$160</span>
-                                </li>
-                                <li>
-                                    <p class="package">Blow Dry Hair</p>
-                                    <div class="border-middle"></div><span class="price">$45</span>
-                                </li>
-                                <li>
-                                    <p class="package">Foilyage</p>
-                                    <div class="border-middle"></div><span class="price">$60</span>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- line -->
     <hr class="line-vr-section">
     <!-- Testimonials -->
@@ -521,38 +387,38 @@
                     </div>
                 </div>
                 <div class="col-md-6 info mb-30">
-                    <p>Hi, I'm Olivia a Professional Makeup Artist.
-                        <br>Quisque luctus tincidunt enim miss neuenete ectus.
+                    <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.
                     </p>
                     <ul class="list-unstyled contact-list">
                         <li>
                             <div class="icon"><span class="ti-headphone-alt"></span></div>
                             <div class="text">
-                                <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
+                                <p><a href="tel:+919382154932">+91 93821 54932</a></p>
+                                <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-email"></span> </div>
                             <div class="text">
-                                <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
+                                <p><a href="mailto:makeupnoor@gmail.com">makeupnoor@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-location-pin"></span> </div>
                             <div class="text">
-                                <p>525 West Ave, CT 06850 Norwalk</p>
+                                <p>#21 A, VJ Arcade, Poonamallee High Rd, near Appasamy Hospital, Arumbakkam, Chennai, Tamil Nadu 600106</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-time"></span> </div>
                             <div class="text">
-                                <p>Mon-Fri: 08.00 - 19.00, Sunday: Closed</p>
+                                 <p>Mon-Sat: 9.30am - 9.00pm, Sunday: 10.00am - 7.00pm</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-map-alt"></span> </div>
                             <div class="text">
-                                <p><a href="https://www.google.com/maps" target="_blank">Google Maps</a></p>
+                                <p><a href="https://www.google.com/maps/place/Appasamy+Hospitals/@13.0725445,80.2060615,15.4z/data=!4m6!3m5!1s0x3a5266995cdc1e3b:0x9cd2c421ab3886ec!8m2!3d13.0733385!4d80.2147624!16s%2Fg%2F11cktm8wkt?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a></p>
                             </div>
                         </li>
                     </ul>

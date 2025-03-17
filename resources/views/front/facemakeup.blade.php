@@ -27,27 +27,13 @@
                             <div class="col-md-12">
                                 <div class="img"> <img src="{{ asset('assets/front/img/services/s8.jpg') }}" class="img-fluid mb-30" alt=""> </div>
                                 <h3>Face Makeup</h3>
-                                <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare. Morbi mollis a enim nec ullase emcorper. Proin condimentum ut mauris ut placerat. Donec commodo diam lorem, commodo viverra metus mollis nec. Nam vehicula ipsum faucibus at eros vitae dui pulvina the ornare.</p>
-                                <p>Morbi mollis a enim nec ullamcorper. Proin condimentum ut mauris ut placerat. Donec commodo diamlorem, commodo viverra metus mollis vehicula ipsum faucibus.</p>
+                                <p>Well-known for professional <b>Face/Bridal</b> makeup services in and around Chennai, Noor Makeup Artists transform you into the bride you’ve always dreamed of! With dedication and passion for the makeup industry, Noor is the ideal <b>Face/Bridal</b> artist for both residential and destination weddings in Chennai. His deep understanding of tradition, culture, and the unique needs of every bride, combined with his immense care and passion for enhancing <b>Face/Bridal</b> beauty, ensures an exquisite and flawless transformation.</p>
+                                <p>At Noor, we offer a makeup trial consultation to help you choose a chic, personalized look that best suits your style. During the trial session at our <b>Face/Bridal</b> studio in Chennai, we guide you in selecting the perfect color palette to match your skin tone and texture, bridal attire, and jewelry. We also explore different hairstyles and draping styles to give you a complete makeover and achieve your dream <b>Face/Bridal</b> look.</p>
+                                <p>Our <b>Face/Bridal</b> studio in Chennai is conveniently located for trial sessions, allowing you to preview how you will look on your special day when you exchange your wedding vows. During this session, we also provide styling, diet, and health tips to ensure that you radiate beauty and confidence, making your dream wedding a reality!</p>
+                                <p>At Noor Makeup Artists, we turn your fairytale wedding into reality, transforming brides into stunning princesses on their most special day.</p>
+                                <p><b>Plan today for that special day!</b> Contact us to achieve the perfect <b>Face/Bridal</b> look—because your dream makeover begins with us<b>!</b></p>
                             </div>
-                        </div>
-                        <div class="row services-price mb-30">
-                            <div class="col-md-12">
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Wash<span class="price">$20,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Hair Coloring<span class="price">$75,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                                <div class="services-price-info">
-                                    <h5 class="title">Blow Dry Hair <span class="price">$30,00</span></h5>
-                                    <p>Quisque volutpat non nisl id tincidunt. Praesent at eros vitae dui pulvinar ornare.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        </div>    
                         <!-- gallery -->
                         <div class="row mb-30">
                             <div class="col-md-6 gallery-item">

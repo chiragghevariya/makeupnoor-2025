@@ -10,48 +10,46 @@
                         <hr class="line line-hr-secondary">
                     </div>
                 </div>
-                <div class="col-md-6 info mb-30">
-                    <p>Hi, I'm Olivia a Professional Makeup Artist.
-                        <br>Quisque luctus tincidunt enim miss neuenete ectus.
+               <div class="col-md-6 info mb-30">
+                    <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.
                     </p>
                     <ul class="list-unstyled contact-list">
                         <li>
                             <div class="icon"><span class="ti-headphone-alt"></span></div>
                             <div class="text">
-                                <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
+                                <p><a href="tel:+919382154932">+91 93821 54932</a></p>
+                                <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-email"></span> </div>
                             <div class="text">
-                                <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
+                                <p><a href="mailto:makeupnoor@gmail.com">makeupnoor@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-location-pin"></span> </div>
                             <div class="text">
-                                <p>525 West Ave, CT 06850 Norwalk</p>
+                                <p>#21 A, VJ Arcade, Poonamallee High Rd, near Appasamy Hospital, Arumbakkam, Chennai, Tamil Nadu 600106</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-time"></span> </div>
                             <div class="text">
-                                <p>Mon-Fri: 08.00 - 19.00, Sunday: Closed</p>
+                                <p>Mon-Sat: 9.30am - 9.00pm, Sunday: 10.00am - 7.00pm</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-map-alt"></span> </div>
                             <div class="text">
-                                <p><a href="https://www.google.com/maps" target="_blank">Google Maps</a></p>
+                                <p><a href="https://www.google.com/maps/place/Appasamy+Hospitals/@13.0725445,80.2060615,15.4z/data=!4m6!3m5!1s0x3a5266995cdc1e3b:0x9cd2c421ab3886ec!8m2!3d13.0733385!4d80.2147624!16s%2Fg%2F11cktm8wkt?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a></p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <h6>GET IN TOUCH</h6>
-                            <div id="successMessage" class="alert alert-success d-none"></div>
-
-                        <form id="contact" class="row FromSubmit postFormcommon" action="{{ route('contact-post') }}" method="POST" >
+                        <form id="contact" class="row postFormcommon" action="{{ route('contact-post') }}" method="POST" >
                             @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
