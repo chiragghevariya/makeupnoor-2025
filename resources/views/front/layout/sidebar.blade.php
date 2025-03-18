@@ -11,8 +11,8 @@
                 <li><a href="{{ route('about') }}">About</a></li>
                 <li class="ovon-sub"><a>Services <i class="ti-angle-down"></i><span class="holder"></span></a>
                     <ul style="display: none;">
-                        <li><a href="{{ route ('face-makeup') }}">Face Makeup</a></li>
                         <li><a href="{{ route ('bridal-makeup') }}">Bridal Makeup</a></li>
+                        <li><a href="{{ route ('face-makeup') }}">Face Makeup</a></li>
                         <li><a href="{{ route ('fashion-makeup') }}">Fashion Makeup</a></li>
                         <li><a href="{{ route ('film-makeup') }}">Film Makeup</a></li> 
                     </ul>
@@ -38,10 +38,9 @@
         <div class="ovon-footer">
             <div class="separator"></div>
             <ul>
-                <li><a href="#"><i class="ti-instagram"></i></a></li>
-                <li><a href="#"><i class="ti-twitter"></i></a></li>
-                <li><a href="#"><i class="ti-facebook"></i></a></li>
-                <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                <li><a href="https://www.instagram.com/bridalstudionoor/"><i class="ti-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@makeupnoor"><i class="ti-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/makeupnoor"><i class="ti-facebook"></i></a></li>
             </ul>
             <p>© Copyright 2025. All right reserved.</p>
 

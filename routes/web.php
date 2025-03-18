@@ -27,7 +27,6 @@ Route::get('portrait-makeup-artist.html',[HomeController::class, 'faceMakeup'])-
 Route::get('wedding-makeup-artist.html',[HomeController::class, 'bridalMakeup'])->name('bridal-makeup');
 Route::get('fashion-makeup.html',[HomeController::class, 'fashionMakeup'])->name('fashion-makeup');
 Route::get('film-makeup.html',[HomeController::class, 'filmMakeup'])->name('film-makeup');
-Route::get('/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
 
 
 
@@ -65,9 +64,8 @@ Route::middleware(['auth'])->group(function () {
 
     });
 
-
 });
 
 
-
+Route::get('/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
 

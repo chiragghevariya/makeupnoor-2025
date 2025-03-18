@@ -14,10 +14,15 @@
                     <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.
                     </p>
                     <ul class="list-unstyled contact-list">
+                       <li> 
+                            <div class="icon"><i class="bi bi-whatsapp" style="color: green;"></i></div>
+                              <div class="text">
+                                <p><a href="https://wa.me/919382154932" target="_blank">+91 93821 54932</a></p>
+                            </div> 
+                        </li>
                         <li>
                             <div class="icon"><span class="ti-headphone-alt"></span></div>
                             <div class="text">
-                                <p><a href="tel:+919382154932">+91 93821 54932</a></p>
                                 <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                             </div>
                         </li>
@@ -53,18 +58,18 @@
                             @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Name *">
-                            </div>
-                            <div  class="mb-5" >
-                                <span class="text-danger" id="name_error"></span>
+                                <input type="text" name="name" class="form-control" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" placeholder="Email / Phone">
+                                <input type="text" name="email" class="form-control" placeholder="Email">
                             </div>
-                            <div  class="mb-5" >
-                                <span class="text-danger" id="email_error"></span>
+                        </div>
+
+                         <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="phonenumber" class="form-control" placeholder="Phone">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -78,7 +83,7 @@
                           <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                         @endif
 
- <div id="loader" class="text-center d-none">
+                 <div id="loader" class="text-center d-none">
                     <div class="spinner-border text-primary" role="status">
                         <span class="visually-hidden">Loading...</span>
                     </div>

@@ -55,7 +55,7 @@ class HomeController extends Controller
 
    $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
+            'phonenumber' => 'required',
             'message' => 'required',
         ]);
 		if(env('IS_CAPTCHA_ENABLE')){
@@ -71,11 +71,10 @@ class HomeController extends Controller
          $contact = Contact::create([
             'name' => $request->name,
             'email' => $request->email,
+            'phonenumber' => $request->phonenumber,
             'message' => $request->message, // Assign post to logged-in user
 
         ]);
-
-
 
         flashMessage('success', 'email sent Successfully !!');
 

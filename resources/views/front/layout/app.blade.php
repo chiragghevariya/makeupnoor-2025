@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.carousel.css">
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="{{ asset('front/css/style.css')}}?v={{rand()}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->

@@ -6,15 +6,22 @@
                         <a href="{{ route('home') }}"> <span style="font-size: 40px;">NOOR</span></span> </a>
                     </div>
                         <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.</p>
-                        <div class="social-icon"> <a href="index.html"><i class="ti-facebook"></i></a> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-pinterest"></i></a> </div>
+                        <div class="social-icon"><a href="https://www.instagram.com/bridalstudionoor/"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/@makeupnoor"><i class="ti-youtube"></i></a>
+                <a href="https://www.facebook.com/makeupnoor"><i class="ti-facebook"></i></a> </div>
                     </div>
                     <div class="col-md-4 mb-30">
                         <h6>Get in touch</h6>
                         <ul class="list-unstyled footer-list">
+                               <li> 
+                            <div class="icon"><i class="bi bi-whatsapp" style="color: green;"></i></div>
+                              <div class="text">
+                                <p><a href="https://wa.me/919382154932" target="_blank">+91 93821 54932</a></p>
+                            </div> 
+                        </li>
                             <li>
                                 <div class="icon"><i class="ti-headphone-alt"></i></div>
                                 <div class="text">
-                                    <p><a href="tel:+919382154932">+91 93821 54932</a></p>
                                     <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                                 </div>
                             </li>

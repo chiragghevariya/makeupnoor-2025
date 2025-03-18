@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="title mb-30"> <span>Gallery</span>
-                    <h2>Portfolio</h2>
+                    <h2>{{$gallery->name}}</h2>
                     <hr class="line line-hr-secondary">
                 </div>
             </div>
