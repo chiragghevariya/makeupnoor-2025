@@ -19,10 +19,15 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
-Route::get('/about',[HomeController::class, 'about'])->name('about');
-Route::get('/contact',[HomeController::class, 'contact'])->name('contact');
+Route::get('/profile.html',[HomeController::class, 'about'])->name('about');
+Route::get('/contact.html',[HomeController::class, 'contact'])->name('contact');
 Route::post('/contact-post',[HomeController::class, 'contactPost'])->name('contact-post');
 Route::get('/gallery',[HomeController::class, 'gallery'])->name('gallery');
+Route::get('portrait-makeup-artist.html',[HomeController::class, 'faceMakeup'])->name('face-makeup');
+Route::get('wedding-makeup-artist.html',[HomeController::class, 'bridalMakeup'])->name('bridal-makeup');
+Route::get('fashion-makeup.html',[HomeController::class, 'fashionMakeup'])->name('fashion-makeup');
+Route::get('film-makeup.html',[HomeController::class, 'filmMakeup'])->name('film-makeup');
+
 
 
 Route::get('login',[LoginController::class, 'login'])->name('admin.login');
@@ -42,9 +47,15 @@ Route::middleware(['auth'])->group(function () {
         Route::get('create', [GalleryController::class, 'create'])->name('create');
         Route::post('store', [GalleryController::class, 'store'])->name('store');
         Route::get('edit/{id}', [GalleryController::class, 'edit'])->name('edit');
-        Route::post('update/{id}', [GalleryController::class, 'update'])->name('update');
+        Route::put('update/{id}', [GalleryController::class, 'update'])->name('update');
         Route::get('delete/{id}', [GalleryController::class, 'delete'])->name('delete');
     });
+
+     Route::post('/gallery/imagestore', [GalleryController::class, 'imagestore'])->name('admin.gallery.imagestore');
+     Route::get('/gallery/{id}/images', [GalleryController::class, 'images'])->name('admin.gallery.images');
+     Route::post('/gallery/sliderrmv', [GalleryController::class, 'sliderrmv'])->name('admin.gallery.sliderrmv');
+
+
 
     Route::group(['prefix' => 'contact', 'as' => 'contact.'], function()
     {
@@ -53,9 +64,8 @@ Route::middleware(['auth'])->group(function () {
 
     });
 
-
 });
 
 
-
+Route::get('/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
 

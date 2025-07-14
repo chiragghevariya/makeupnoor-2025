@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="@yield('meta-title')">
+    <meta name="description" content="@yield('meta-description')">
+    <meta name="keywords" content="@yield('meta-keywords')">
+
     <title>Makeupnoor</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('') }}front/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@300;400;500;600;700&display=swap">
@@ -13,7 +17,9 @@
     <link rel="stylesheet" href="{{ asset('') }}front/css/magnific-popup.css">
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.carousel.css">
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="{{ asset('') }}front/css/style.css">
+    <link rel="stylesheet" href="{{ asset('front/css/style.css')}}?v={{rand()}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->
@@ -134,6 +140,7 @@
       </script>
 @yield('script')
 @include('admin.auth.toastr')
+@include('front.layout.common')
 
 </body>
 </html>

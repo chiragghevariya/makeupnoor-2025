@@ -6,6 +6,10 @@ use App\Validator\CustomeValidator;
 use Validator;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
+use App\Models\Gallery;
+use Illuminate\Support\Facades\View;
+
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,13 +24,13 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-        $this->app->validator->resolver(function($translator, $data, $rules, $messages) {
-            return new CustomeValidator($translator, $data, $rules, $messages);
-        });
-
-        Paginator::useBootstrap();
-
-    }
+    public function boot()
+{
+    View::composer('*', function ($view) {
+        $galleries = Gallery::where('status', 1) // Fetch only active galleries
+                ->orderBy('name', 'asc') // Order by name in ascending order
+                ->get();
+        $view->with('galleries', $galleries);
+    });
+}
 }

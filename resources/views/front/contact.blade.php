@@ -10,61 +10,66 @@
                         <hr class="line line-hr-secondary">
                     </div>
                 </div>
-                <div class="col-md-6 info mb-30">
-                    <p>Hi, I'm Olivia a Professional Makeup Artist.
-                        <br>Quisque luctus tincidunt enim miss neuenete ectus.
+               <div class="col-md-6 info mb-30">
+                    <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.
                     </p>
                     <ul class="list-unstyled contact-list">
+                       <li> 
+                            <div class="icon"><i class="bi bi-whatsapp" style="color: green;"></i></div>
+                              <div class="text">
+                                <p><a href="https://wa.me/919382154932" target="_blank">+91 93821 54932</a></p>
+                            </div> 
+                        </li>
                         <li>
                             <div class="icon"><span class="ti-headphone-alt"></span></div>
                             <div class="text">
-                                <p><a href="tel:+1-650-444-0000">+1 650-444-0000</a></p>
+                                <p><a href="tel:+919840579576">+91 98405 79576</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-email"></span> </div>
                             <div class="text">
-                                <p><a href="mailto:makeup@ovon.com">makeup@ovon.com</a></p>
+                                <p><a href="mailto:makeupnoor@gmail.com">makeupnoor@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-location-pin"></span> </div>
                             <div class="text">
-                                <p>525 West Ave, CT 06850 Norwalk</p>
+                                <p>#21 A, VJ Arcade, Poonamallee High Rd, near Appasamy Hospital, Arumbakkam, Chennai, Tamil Nadu 600106</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-time"></span> </div>
                             <div class="text">
-                                <p>Mon-Fri: 08.00 - 19.00, Sunday: Closed</p>
+                                <p>Mon-Sat: 9.30am - 9.00pm, Sunday: 10.00am - 7.00pm</p>
                             </div>
                         </li>
                         <li>
                             <div class="icon"> <span class="ti-map-alt"></span> </div>
                             <div class="text">
-                                <p><a href="https://www.google.com/maps" target="_blank">Google Maps</a></p>
+                                <p><a href="https://www.google.com/maps/place/Bridal+Makeup+Artist+in+Chennai+%7C+Noor/@13.0748955,80.2156821,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5261447d638371:0x74348b53bae77a18!8m2!3d13.0748955!4d80.2156821!16s%2Fg%2F12qgh7c3y?entry=ttu&g_ep=EgoyMDI1MDMxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a></p>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <h6>GET IN TOUCH</h6>
-                        <form id="contact" class="row FromSubmit" action="{{ route('contact-post') }}" method="POST" >
+                        <form id="contact" class="row postFormcommon" action="{{ route('contact-post') }}" method="POST" >
                             @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Name *">
-                            </div>
-                            <div  class="mb-5" >
-                                <span class="text-danger" id="name_error"></span>
+                                <input type="text" name="name" class="form-control" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" name="email" class="form-control" placeholder="Email / Phone">
+                                <input type="text" name="email" class="form-control" placeholder="Email">
                             </div>
-                            <div  class="mb-5" >
-                                <span class="text-danger" id="email_error"></span>
+                        </div>
+
+                         <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" name="phonenumber" class="form-control" placeholder="Phone">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -78,7 +83,11 @@
                           <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                         @endif
 
-
+                 <div id="loader" class="text-center d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <button class="btn fl-btn" type="submit">Send</button>
