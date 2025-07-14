@@ -47,7 +47,7 @@
                         <li>
                             <div class="icon"> <span class="ti-map-alt"></span> </div>
                             <div class="text">
-                                <p><a href="https://www.google.com/maps/place/Appasamy+Hospitals/@13.0725445,80.2060615,15.4z/data=!4m6!3m5!1s0x3a5266995cdc1e3b:0x9cd2c421ab3886ec!8m2!3d13.0733385!4d80.2147624!16s%2Fg%2F11cktm8wkt?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a></p>
+                                <p><a href="https://www.google.com/maps/place/Bridal+Makeup+Artist+in+Chennai+%7C+Noor/@13.0748955,80.2156821,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5261447d638371:0x74348b53bae77a18!8m2!3d13.0748955!4d80.2156821!16s%2Fg%2F12qgh7c3y?entry=ttu&g_ep=EgoyMDI1MDMxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a></p>
                             </div>
                         </li>
                     </ul>
