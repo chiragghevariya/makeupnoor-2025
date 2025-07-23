@@ -3,7 +3,7 @@
 <header class="header slider-fade" data-scroll-index="0">
     <div class="owl-carousel owl-theme">
         <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider.jpeg">
+        <div class="item bg-img" data-overlay-dark="2" style="height: 1400px;" data-background="{{ asset('') }}front/img/Designer.jpeg">
             <div class="v-middle">
                 <div class="container">
                     <div class="row">
@@ -71,10 +71,10 @@
                     <p>My dedication to the makeup industry has led to collaborations with renowned artists and talented photographers. Every experience has been a learning opportunity, contributing to my growth and expertise in this field.</p>
                     <p>With over 20 years of experience as a professional makeup and hair artist in Chennai, India, I have worked as a bridal makeup, cine makeup artist and specialist, bringing fresh ideas to the industry.</p>
                     <p>Noor Makeup Artists is your go-to studio for all your makeup and hairstyling needs, including fashion and bridal makeup. Our clientele includes top brands and celebrities.</p>
-                   <p>We’re always excited about new opportunities! Feel free to reach us at 
+                   <p>We’re always excited about new opportunities! Feel free to reach us at
                     <a href="https://wa.me/919382154932" target="_blank">+91 9382154932</a> /
-                    <a href="tel:+919840579576" target="_blank">9840579576</a> or email us at 
-                    <a href="mailto:makeupnoor@gmail.com" target="_blank">makeupnoor@gmail.com</a> / 
+                    <a href="tel:+919840579576" target="_blank">9840579576</a> or email us at
+                    <a href="mailto:makeupnoor@gmail.com" target="_blank">makeupnoor@gmail.com</a> /
                     <a href="mailto:noor@makeupnoor.com" target="_blank">noor@makeupnoor.com</a>.
                 </p>
                 </div>
@@ -98,28 +98,28 @@
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s8.jpg"
+                            <div class="position-re o-hidden"> <img class="s-image" src="{{ asset('') }}front/img/services/s8.jpeg"
                                     alt=""> </div>
                             <div class="con">
                                 <h5><a href="{{ route ('face-makeup') }}">Face Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s3.jpg"
+                            <div class="position-re o-hidden"> <img class="s-image" src="{{ asset('') }}front/img/services/s3.jpg"
                                     alt=""> </div>
                             <div class="con">
                                 <h5><a href="{{ route ('bridal-makeup') }}">Bridal Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s2.jpg"
+                            <div class="position-re o-hidden"> <img class="s-image" src="{{ asset('') }}front/img/services/s2.jpg"
                                     alt=""> </div>
                             <div class="con">
                                 <h5><a href="{{ route ('fashion-makeup') }}">Fashion Makeup</a></h5>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ asset('') }}front/img/services/s5.jpg"
+                            <div class="position-re o-hidden"> <img class="s-image" src="{{ asset('') }}front/img/services/film-makup.jpg"
                                     alt=""> </div>
                             <div class="con">
                                 <h5><a href="{{ route ('film-makeup') }}">Film Makeup</a></h5>
@@ -390,11 +390,11 @@
                     <p>Bridal makeup artist Noor is basically Chennai based makeup artist but visits other states even oversees for bridal makeup, with over 20 years of experience. His specialization is traditional South Indian bridal makeup and contemporary styles, catering to brides in Chennai and Coimbatore. Noor's aim is to bring each bride's vision to life, using his expertise to enhance natural beauty on their wedding day.
                     </p>
                     <ul class="list-unstyled contact-list">
-                          <li> 
+                          <li>
                             <div class="icon"><i class="bi bi-whatsapp" style="color: green;"></i></div>
                               <div class="text">
                                 <p><a href="https://wa.me/919382154932" target="_blank">+91 93821 54932</a></p>
-                            </div> 
+                            </div>
                         </li>
                         <li>
                             <div class="icon"><span class="ti-headphone-alt"></span></div>
@@ -433,7 +433,7 @@
                             <div id="successMessage" class="alert alert-success d-none"></div>
 
                     <form action="{{ route('contact-post') }}" method="POST" class="row  postFormcommon">
-                            @csrf 
+                            @csrf
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Name">

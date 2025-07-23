@@ -51,7 +51,7 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g1.jpg') }}" title="Eye Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g1.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g1.jpg') }}" class="g-image mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
@@ -59,7 +59,7 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g2.jpg') }}" title="Painting Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g2.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g2.jpg') }}" class="g-image mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
@@ -67,7 +67,7 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g3.jpg') }}" title="Bridal Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g3.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g3.jpg') }}" class="g-image mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
@@ -75,7 +75,7 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g4.jpg') }}" title="Effect Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g4.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g4.jpg') }}" class="g-image mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
@@ -83,7 +83,7 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g5.jpg') }}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g5.jpg') }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g5.jpg') }}" class="g-image mx-auto d-block" alt="work-img"> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
@@ -91,13 +91,13 @@
                             <div class="col-md-6 gallery-item">
                                 <a href="{{ asset('assets/front/img/services/g6.jpg') }}" title="Fashion Makeup" class="img-zoom">
                                     <div class="gallery-box">
-                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g6.jpg') }}" class="img-fluid mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g6.jpg') }}" class="g-image mx-auto d-block" alt=""> </div>
                                         <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-md-4 sidebar-side animate-box" data-animate-effect="fadeInUp">
                             <aside class="sidebar blog-sidebar">

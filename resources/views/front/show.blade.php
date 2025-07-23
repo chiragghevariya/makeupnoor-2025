@@ -2,7 +2,6 @@
 @section('meta-title', "$gallery->meta_title")
 @section('meta-keywords', "$gallery->meta_keywords")
 @section('meta-description', "$gallery->meta_description")
-
 @section('content')
 <section id="portfolio" class="section-padding" data-scroll-index="5">
     <div class="container">
@@ -21,7 +20,7 @@
                     <a href="{{ asset('assets/front/img/gallery/images/' . $image->image) }}" title="{{ $gallery->name }}" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img">
-                                <img src="{{ asset('assets/front/img/gallery/images/' . $image->image) }}" class="img-fluid mx-auto d-block" alt="{{ $gallery->name }}">
+                                <img src="{{ asset('assets/front/img/gallery/images/' . $image->image) }}" class="g-image mx-auto d-block" alt="{{ $gallery->name }}">
                             </div>
                             <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
                         </div>
