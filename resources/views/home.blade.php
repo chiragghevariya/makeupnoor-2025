@@ -3,7 +3,7 @@
 <header class="header slider-fade" data-scroll-index="0">
     <div class="owl-carousel owl-theme">
         <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-        <div class="item bg-img" data-overlay-dark="2" style="height: 1400px;" data-background="{{ asset('') }}front/img/Designer.jpeg">
+        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider_noor.jpg">
             <div class="v-middle">
                 <div class="container">
                     <div class="row">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider2.jpg">
+        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider2_noor.jpg">
             <div class="v-middle">
                 <div class="container">
                     <div class="row">
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider3.jpg">
+        <div class="item bg-img" data-overlay-dark="2" data-background="{{ asset('') }}front/img/slider3_noor.jpg">
             <div class="v-middle">
                 <div class="container">
                     <div class="row">
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="about-img mb-30 img-fluid animate-box" data-animate-effect="fadeInUp"
-                        style="background-image: url(public/front/img/noor-photo.jpeg);">
+                        style="background-image: url(public/front/img/Noor_Photo.jpg);">
                     </div>
                 </div>
                 <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
@@ -171,7 +171,7 @@
         </div>
     </section>
     <!-- Team -->
-    <section id="team" class="team section-padding" data-scroll-index="3">
+    {{-- <section id="team" class="team section-padding" data-scroll-index="3">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -222,7 +222,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- line -->
     <hr class="line-vr-section">
     <!-- line -->
@@ -281,12 +281,12 @@
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="post-img">
-                                <a href="post.html"> <img src="{{ asset('') }}front/img/blog/1.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/1.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post.html">2024 Bridal Beauty Trends</a>
+                                    <a href="javascript:void();">2024 Bridal Beauty Trends</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>
@@ -295,12 +295,12 @@
                         </div>
                         <div class="item">
                             <div class="post-img">
-                                <a href="post2.html"> <img src="{{ asset('') }}front/img/blog/2.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/2.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post2.html">Dark Smokey Eye Makeup</a>
+                                    <a href="javascript:void();">Dark Smokey Eye Makeup</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>
@@ -309,12 +309,12 @@
                         </div>
                         <div class="item">
                             <div class="post-img">
-                                <a href="post3.html"> <img src="{{ asset('') }}front/img/blog/3.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/3.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post3.html">10 Special Effects Makeup</a>
+                                    <a href="javascript:void();">10 Special Effects Makeup</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>
@@ -323,12 +323,12 @@
                         </div>
                         <div class="item">
                             <div class="post-img">
-                                <a href="post4.html"> <img src="{{ asset('') }}front/img/blog/4.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/4.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post4.html">The Best Eye Makeup Trends</a>
+                                    <a href="javascript:void();">The Best Eye Makeup Trends</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>
@@ -337,12 +337,12 @@
                         </div>
                         <div class="item">
                             <div class="post-img">
-                                <a href="post5.html"> <img src="{{ asset('') }}front/img/blog/5.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/5.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post5.html">Mascara Tips for Loud & Clean Lashes</a>
+                                    <a href="javascript:void();">Mascara Tips for Loud & Clean Lashes</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>
@@ -351,12 +351,12 @@
                         </div>
                         <div class="item">
                             <div class="post-img">
-                                <a href="post6.html"> <img src="{{ asset('') }}front/img/blog/6.jpg" alt="">
+                                <a href="javascript:void();"> <img src="{{ asset('') }}front/img/blog/6.jpg" alt="">
                                 </a>
                             </div>
                             <div class="post-cont"> <a href="blog.html"><span class="tag">Makeup</span></a>
                                 <h5>
-                                    <a href="post6.html">5-Minute Natural Makeup Tutorial</a>
+                                    <a href="javascript:void();">5-Minute Natural Makeup Tutorial</a>
                                 </h5>
                                 <p>Quisque facilisis libero viventa egeten cursus ex maximus non. Quisque miss volutpat
                                     venenatis hendrerit...</p>

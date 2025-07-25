@@ -96,6 +96,38 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-md-6 gallery-item">
+                                <a href="{{ asset('assets/front/img/services/g25.jpg') }}" title="Fashion Makeup" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g25.jpg') }}" class="g-image mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 gallery-item">
+                                <a href="{{ asset('assets/front/img/services/g26.jpg') }}" title="Fashion Makeup" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g26.jpg') }}" class="g-image mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 gallery-item">
+                                <a href="{{ asset('assets/front/img/services/g27.jpg') }}" title="Fashion Makeup" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g27.jpg') }}" class="g-image mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 gallery-item">
+                                <a href="{{ asset('assets/front/img/services/g28.jpg') }}" title="Fashion Makeup" class="img-zoom">
+                                    <div class="gallery-box">
+                                        <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g28.jpg') }}" class="g-image mx-auto d-block" alt=""> </div>
+                                        <div class="gallery-detail text-center"> <i class="ti-plus"></i> </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
