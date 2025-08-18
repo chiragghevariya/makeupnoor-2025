@@ -54,7 +54,7 @@
                 <!-- gallery -->
                 <div class="row mb-30">
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g7.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g7.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g7.jpg') }}"
@@ -64,7 +64,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g8.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g8.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g8.jpg') }}"
@@ -74,7 +74,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g9.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g9.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g9.jpg') }}"
@@ -84,7 +84,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g10.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g10.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g10.jpg') }}"
@@ -94,7 +94,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g11.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g11.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g11.jpg') }}"
@@ -104,7 +104,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g12.jpg') }}" title="Fashion Makeup"
+                        <a href="{{ asset('assets/front/img/services/g12.jpg') }}" title="Portrait Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g12.jpg') }}"

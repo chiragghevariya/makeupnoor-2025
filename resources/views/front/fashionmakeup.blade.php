@@ -42,7 +42,7 @@
                 <!-- gallery -->
                 <div class="row mb-30">
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g13.jpg') }}" title="Eye Makeup" class="img-zoom">
+                        <a href="{{ asset('assets/front/img/services/g13.jpg') }}" title="Fashion Makeup" class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g13.jpg') }}"
                                         class="g-image mx-auto d-block" alt="work-img"> </div>
@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g14.jpg') }}" title="Painting Makeup"
+                        <a href="{{ asset('assets/front/img/services/g14.jpg') }}" title="Fashion Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g14.jpg') }}"
@@ -61,7 +61,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g15.jpg') }}" title="Bridal Makeup"
+                        <a href="{{ asset('assets/front/img/services/g15.jpg') }}" title="Fashion Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g15.jpg') }}"
@@ -71,7 +71,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 gallery-item">
-                        <a href="{{ asset('assets/front/img/services/g16.jpg') }}" title="Effect Makeup"
+                        <a href="{{ asset('assets/front/img/services/g16.jpg') }}" title="Fashion Makeup"
                             class="img-zoom">
                             <div class="gallery-box">
                                 <div class="gallery-img"> <img src="{{ asset('assets/front/img/services/g16.jpg') }}"
