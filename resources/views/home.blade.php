@@ -1,3 +1,8 @@
+
+@section('meta-title','   ')
+@section('meta-keyword','    ')
+@section('meta-description','   ')
+
 @extends('front.layout.app')
 @section('content')
 <header class="header slider-fade" data-scroll-index="0">

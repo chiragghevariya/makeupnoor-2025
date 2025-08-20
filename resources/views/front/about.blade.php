@@ -1,3 +1,7 @@
+@section('meta-title','   ')
+@section('meta-keyword','   ')
+@section('meta-description','  ')
+
 @extends('front.layout.app')
 @section('content')
     <!-- About -->

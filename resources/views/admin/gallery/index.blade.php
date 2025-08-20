@@ -1,5 +1,9 @@
-@extends('admin.layout.app')
 @section('title', 'Gallery')
+@section('meta-keyword','   ')
+@section('meta-description','  ')
+
+
+@extends('admin.layout.app')
 @section('content')
 <style>
     div.dataTables_wrapper .card-header {
