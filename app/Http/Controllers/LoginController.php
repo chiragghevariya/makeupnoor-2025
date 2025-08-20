@@ -11,7 +11,7 @@ class LoginController extends Controller
     //
     public function login(){
 
-        if (\Auth::check())  {
+        if (Auth::check())  {
 
             return redirect()->route('index');
         }
@@ -38,7 +38,7 @@ class LoginController extends Controller
 
         $request->validate($rules, $messages);
 
-        if (\Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
 
            flashMessage('success', 'Login Successfully Done!!');
 
@@ -53,11 +53,11 @@ class LoginController extends Controller
 
     public function logout()
     {
-        \Auth::logout();
+        Auth::logout();
 
         flashMessage('success', 'Logout Successfully !!');
 
         return redirect()->route('admin.login');
-    }
+    }   
 
 }
