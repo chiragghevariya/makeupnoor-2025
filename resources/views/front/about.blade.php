@@ -1,3 +1,7 @@
+@section('meta-title','   ')
+@section('meta-keyword','   ')
+@section('meta-description','  ')
+
 @extends('front.layout.app')
 @section('content')
     <!-- About -->
@@ -6,7 +10,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="about-img mb-30 img-fluid animate-box" data-animate-effect="fadeInUp"
-                        style="background-image: url(public/front/img/noor-photo.jpeg);">
+                        style="background-image: url(public/front/img/Noor_Photo.jpg);">
                     </div>
                 </div>
                 <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
@@ -20,10 +24,10 @@
                     <p>My dedication to the makeup industry has led to collaborations with renowned artists and talented photographers. Every experience has been a learning opportunity, contributing to my growth and expertise in this field.</p>
                     <p>With over 20 years of experience as a professional makeup and hair artist in Chennai, India, I have worked as a bridal makeup, cine makeup artist and specialist, bringing fresh ideas to the industry.</p>
                     <p>Noor Makeup Artists is your go-to studio for all your makeup and hairstyling needs, including fashion and bridal makeup. Our clientele includes top brands and celebrities.</p>
-                   <p>We’re always excited about new opportunities! Feel free to reach us at 
+                   <p>We’re always excited about new opportunities! Feel free to reach us at
                     <a href="https://wa.me/919382154932" target="_blank">+91 9382154932</a> /
-                    <a href="tel:+919840579576" target="_blank">9840579576</a> or email us at 
-                    <a href="mailto:makeupnoor@gmail.com" target="_blank">makeupnoor@gmail.com</a> / 
+                    <a href="tel:+919840579576" target="_blank">9840579576</a> or email us at
+                    <a href="mailto:makeupnoor@gmail.com" target="_blank">makeupnoor@gmail.com</a> /
                     <a href="mailto:noor@makeupnoor.com" target="_blank">noor@makeupnoor.com</a>.
                 </p>
                 </div>

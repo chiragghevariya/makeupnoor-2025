@@ -19,7 +19,19 @@
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="{{ asset('front/css/style.css')}}?v={{rand()}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <style>
+    img.g-image.mx-auto.d-block {
+        width: 345px;
+        height: 245px;
+    }
+    img.s-image {
+        height: 300px;
+    }
+    /* .item.bg-img {
+    height: 1673px !important;
+    width: 1200px !important;
+} */
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->
