@@ -177,8 +177,8 @@
         loop: true,
         dots: true,
         margin: 0,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 15000,
         animateOut: 'fadeOut',
         nav: false,
         navText: ['<i class="ti-angle-left" aria-hidden="true"></i>', '<i class="ti-angle-right" aria-hidden="true"></i>']

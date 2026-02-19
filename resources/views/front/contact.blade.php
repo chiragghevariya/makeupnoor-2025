@@ -1,3 +1,10 @@
+@section('meta-title','Contact Noor | Professional Bridal Makeup Artist in Chennai')
+@section('meta-keyword','makeup artist contact chennai, book bridal makeup chennai')
+@section('keywords','makeup artist contact chennai, book bridal makeup chennai')
+@section('meta-description','Check availability, share your wedding date, and get a custom quote. Chennai-based, serving Coimbatore & Tirupur.')
+@section('title','Contact Noor | Book Bridal Makeup in Chennai, Coimbatore & Tirupur')
+
+
 @extends('front.layout.app')
 @section('content')
     <!-- Contact -->

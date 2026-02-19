@@ -1,3 +1,7 @@
+
+@section('meta-title','   ')
+@section('meta-keyword','   ')
+@section('meta-description','  ')
 @extends('admin.layout.app')
 
 @section('style')

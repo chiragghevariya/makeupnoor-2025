@@ -64,8 +64,12 @@ Route::middleware(['auth'])->group(function () {
 
     });
 
+
+
 });
 
+    Route::get('/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
 
-Route::get('/{slug}', [GalleryController::class, 'show'])->name('portfolio.show');
+
+
 

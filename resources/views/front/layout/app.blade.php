@@ -3,11 +3,128 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="@yield('meta-title')">
-    <meta name="description" content="@yield('meta-description')">
-    <meta name="keywords" content="@yield('meta-keywords')">
+ {{-- Safe meta and title: if a section is empty, fall back. If title is not provided, derive from URL --}}
+    @php
+        $providedMetaTitle = trim($__env->yieldContent('meta-title'));
+        $providedMetaDescription = trim($__env->yieldContent('meta-description'));
+        $providedMetaKeywords = trim($__env->yieldContent('meta-keywords'));
+        $providedTitle = trim($__env->yieldContent('title'));
 
-    <title>Makeupnoor</title>
+        $appName = config('app.name', 'Makeupnoor');
+
+        // Compute current request path/last segment once (used for title/meta fallbacks)
+        $path = request()->path(); // e.g., 'wedding-makeup-artist.html' or 'services/bridal'
+        $segments = array_filter(explode('/', $path));
+        $last = end($segments) ?: '';
+        $lastLower = strtolower($last);
+
+        // Known mappings for pages that should have unique meta values when empty
+        $titleMap = [
+            'wedding-makeup-artist.html' => 'Wedding Makeup Artist in Chennai | HD & Airbrush Bridal Makeup',
+            'portrait-makeup-artist.html' => 'Portrait & Engagement Makeup Artist in Chennai | Noor',
+            'fashion-makeup.html' => 'Fashion & Editorial Makeup Artist in Chennai | Noor',
+            'film-makeup.html' => 'Film & Media Makeup Artist in Chennai | Noor',
+            'bridal-makeup-chennai.html' => 'Bridal Makeup in Chennai – Portfolio & Pricing | Noor',
+            'bridal-makeup-coimbatore.html' => 'Bridal Makeup in Coimbatore – Portfolio & Pricing | Noor',
+            'bridal-makeup-tirupur.html' => 'Bridal Makeup in Tirupur – Portfolio & Pricing | Noor',
+            'bridal-makeup-erode.html' => 'Bridal Makeup in Erode – Portfolio & Pricing | Noor',
+            'bridal-makeup-madurai.html' => 'Bridal Makeup in Madurai – Portfolio & Pricing | Noor',
+            'bridal-makeup-trichy.html' => 'Bridal Makeup in Trichy – Portfolio & Pricing | Noor',
+            'bridal-makeup-vijayawada.html' => 'Bridal Makeup in Vijayawada – Portfolio & Pricing | Noor',
+        ];
+
+        // Per-page meta title mapping (used when meta-title section is empty)
+        $metaTitleMap = [
+            'wedding-makeup-artist.html' => 'Wedding Makeup Artist | ' . $appName,
+            'portrait-makeup-artist.html' => 'Portrait Makeup Artist | ' . $appName,
+            'fashion-makeup.html' => 'Fashion Makeup | ' . $appName,
+            'film-makeup.html' => 'Film Makeup | ' . $appName,
+            'bridal-makeup-chennai.html' => 'Bridal Makeup Chennai | ' . $appName,
+            'bridal-makeup-coimbatore.html' => 'Bridal Makeup Coimbatore | ' . $appName,    
+            'bridal-makeup-tirupur.html' => 'Bridal Makeup Tirupur | ' . $appName,
+            'bridal-makeup-erode.html' => 'Bridal Makeup Erode | ' . $appName,
+            'bridal-makeup-madurai.html' => 'Bridal Makeup Madurai | ' . $appName,
+            'bridal-makeup-trichy.html' => 'Bridal Makeup Trichy | ' . $appName,
+            'bridal-makeup-vijayawada.html' => 'Bridal Makeup Vijayawada | ' . $appName,
+        ];
+
+        $descriptionMap = [
+            'wedding-makeup-artist.html' => 'Professional wedding makeup artist services offering flawless bridal looks in Chennai and nearby cities.',
+            'portrait-makeup-artist.html' => 'Expert portrait makeup services for portfolios, events and photography shoots.',
+            'fashion-makeup.html' => 'Fashion makeup services for shows, editorials, and designer shoots.',
+            'film-makeup.html' => 'Cinematic and film makeup services for productions, actors and shoots.',
+            'bridal-makeup-chennai.html' => 'Top bridal makeup services in Chennai by experienced makeup artist Noor — bridal trials, on-site services and packages.',
+            'bridal-makeup-coimbatore.html' => 'Top bridal makeup services in Coimbatore by experienced makeup artist Noor — bridal trials, on-site services and packages.',
+            'bridal-makeup-tirupur.html' => 'Bridal makeup services in Tirupur delivering elegant and long-lasting bridal looks.',
+            'bridal-makeup-erode.html' => 'Bridal makeup services in Erode offering personalised bridal looks and packages.',
+            'bridal-makeup-madurai.html' => 'Bridal makeup services in Madurai with experienced artists and tailored bridal packages.',                     
+            'bridal-makeup-trichy.html' => 'Bridal makeup services in Trichy specializing in traditional and contemporary bridal styles.',
+            'bridal-makeup-vijayawada.html' => 'Bridal makeup services in Vijayawada focused on creating flawless bridal transformations.',
+        ];
+
+    $keywordsMap = [
+            'wedding-makeup-artist.html' => 'wedding makeup, bridal makeup, chennai wedding makeup',
+            'portrait-makeup-artist.html' => 'portrait makeup, photoshoot makeup, portfolio makeup, engagement makeup chennai',
+            'fashion-makeup.html' => 'fashion makeup, runway makeup, editorial makeup, fashion makeup artist chennai, editorial makeup chennai',
+            'film-makeup.html' => 'film makeup, cinematic makeup, movie makeup artist, film makeup artist chennai, movie makeup chennai',
+            'bridal-makeup-chennai.html' => 'bridal makeup chennai, wedding makeup chennai, bridal artist chennai, bridal makeup artist chennai, best bridal makeup chennai',
+            'bridal-makeup-coimbatore.html' => 'bridal makeup coimbatore, wedding makeup coimbatore, bridal artist coimbatore, bridal makeup artist coimbatore',
+            'bridal-makeup-tirupur.html' => 'bridal makeup tirupur, wedding makeup tirupur, bridal makeup artist tirupur',
+            'bridal-makeup-erode.html' => 'bridal makeup erode, wedding makeup erode, bridal artist erode, bridal makeup artist erode',
+            'bridal-makeup-madurai.html' => 'bridal makeup madurai, wedding makeup madurai, bridal makeup artist madurai',
+            'bridal-makeup-trichy.html' => 'bridal makeup trichy, wedding makeup trichy, bridal makeup artist trichy',
+            'bridal-makeup-vijayawada.html' => 'bridal makeup vijayawada, wedding makeup vijayawada, bridal makeup artist vijayawada',
+        ];
+
+        // Only derive a title when the view didn't provide one
+        if ($providedTitle === '') {
+            if (isset($titleMap[$lastLower])) {
+                $finalTitle = $titleMap[$lastLower];
+            } else {
+                // Generic fallback: convert last segment to a readable title
+                $clean = preg_replace('/\.html$/', '', $last);
+                $clean = preg_replace('/[-_]+/', ' ', $clean);
+                $derived = trim(ucwords($clean));
+                if ($derived === '' || in_array(strtolower($derived), ['home', '/'])) {
+                    $finalTitle = $appName;
+                } else {
+                    $finalTitle = $derived;
+                }
+            }
+        } else {
+            $finalTitle = $providedTitle;
+        }
+
+        if ($providedMetaTitle !== '') {
+            $metaTitle = $providedMetaTitle;
+        } elseif (isset($metaTitleMap[$lastLower])) {
+            $metaTitle = $metaTitleMap[$lastLower];
+        } else {
+            $metaTitle = $appName;
+        }
+
+        // If meta description is empty, try a per-page mapping, otherwise use default
+        if ($providedMetaDescription !== '') {
+            $metaDescription = $providedMetaDescription;
+        } elseif (isset($descriptionMap[$lastLower])) {
+            $metaDescription = $descriptionMap[$lastLower];
+        } else {
+            $metaDescription = 'Professional makeup artist in Chennai';
+        }
+
+        // If meta keywords is empty, try a per-page mapping, otherwise use default
+        if ($providedMetaKeywords !== '') {
+            $metaKeywords = $providedMetaKeywords;
+        } elseif (isset($keywordsMap[$lastLower])) {
+            $metaKeywords = $keywordsMap[$lastLower];
+        } else {
+            $metaKeywords = 'makeup artist, bridal makeup, Chennai';
+        }
+    @endphp
+    <meta name="title" content="{{ $metaTitle }}">
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $metaKeywords }}">
+    <title>{{ $finalTitle }}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('') }}front/img/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ asset('') }}front/css/bootstrap.min.css">
@@ -19,7 +136,19 @@
     <link rel="stylesheet" href="{{ asset('') }}front/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="{{ asset('front/css/style.css')}}?v={{rand()}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <style>
+    img.g-image.mx-auto.d-block {
+        width: 345px;
+        height: 245px;
+    }
+    img.s-image {
+        height: 300px;
+    }
+    /* .item.bg-img {
+    height: 1673px !important;
+    width: 1200px !important;
+} */
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Preloader -->

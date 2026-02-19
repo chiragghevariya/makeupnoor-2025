@@ -48,7 +48,7 @@ class HomeController extends Controller
         return view('front.filmmakeup');
     }
 
-    public function contactPost(request $request)
+       public function contactPost(request $request)
     {
 
         $messages = [];
@@ -81,7 +81,7 @@ class HomeController extends Controller
         return response()->json(['status' => 'email sent Successfully !!','redirect_url' => route('contact')]);
 
     }
-
+    
     public function gallery()
     {
     	return view('front.gallery');
